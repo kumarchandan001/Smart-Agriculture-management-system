@@ -19,7 +19,7 @@ export default function Weather() {
 
   const lat = "12.649220698194235";
   const lon = "77.43870985907161";
-  const apiKey = "781beec0d5e6dca3b43b286d25b0e7af"; // your key
+  const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 
   const fetchWeather = async () => {
     setLoading(true);
