@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "title": "Monsoon Farming Tips",
+    "season": "June-September",
+    "description": "Important practices during monsoon season",
+    "tips": [
+      {
+        "point": "Drainage Management",
+        "details": "Create proper drainage channels to prevent waterlogging. Check and repair field bunds regularly."
+      },
+      {
+        "point": "Pest Control",
+        "details": "Pest incidence increases in monsoon. Use sprayers to protect crops from fungal diseases and pests."
+      },
+      {
+        "point": "Timing of Operations",
+        "details": "Plan farm operations between rain intervals. Use alternate rows for irrigation optimization."
+      },
+      {
+        "point": "Crop Selection",
+        "details": "Grow monsoon crops like rice, maize, cotton, and pulses. Avoid early sowing to prevent crop damage."
+      },
+      {
+        "point": "Mulching",
+        "details": "Use organic mulch to prevent soil erosion and conserve moisture during heavy rains."
+      }
+    ],
+    "crops": ["Rice", "Maize", "Cotton", "Sugarcane", "Pulses"]
+  },
+  {
+    "id": 2,
+    "title": "Winter Farming Tips",
+    "season": "October-March",
+    "description": "Important practices during winter season",
+    "tips": [
+      {
+        "point": "Timely Sowing",
+        "details": "Sow rabi crops at proper time - wheat in October-November, pulses in October."
+      },
+      {
+        "point": "Irrigation Scheduling",
+        "details": "Plan irrigation based on crop demand. Winter crops need 2-3 irrigations depending on rainfall."
+      },
+      {
+        "point": "Frost Protection",
+        "details": "For sensitive crops, monitor frost warnings. Use smoke or irrigation to prevent frost damage."
+      },
+      {
+        "point": "Weed Management",
+        "details": "Winter weeds are more problematic. Apply pre-emergent herbicides and maintain field cleanliness."
+      },
+      {
+        "point": "Fertilizer Application",
+        "details": "Apply nutrients at proper time. Use foliar spray for micronutrients if deficiencies appear."
+      }
+    ],
+    "crops": ["Wheat", "Chickpea", "Mustard", "Onion", "Garlic"]
+  },
+  {
+    "id": 3,
+    "title": "Summer Farming Tips",
+    "season": "March-May",
+    "description": "Important practices during summer season",
+    "tips": [
+      {
+        "point": "Water Management",
+        "details": "Increase irrigation frequency. Use drip irrigation to save water. Check soil moisture regularly."
+      },
+      {
+        "point": "Heat Stress Mitigation",
+        "details": "Use mulching to reduce soil temperature. Provide adequate water, especially during flowering."
+      },
+      {
+        "point": "Crop Selection",
+        "details": "Grow heat-tolerant crops. Summer vegetables like okra, brinjal, cucumber are ideal."
+      },
+      {
+        "point": "Pest Management",
+        "details": "Higher pest incidence in summer. Use shade nets and regular monitoring to reduce pest population."
+      },
+      {
+        "point": "Soil Preparation",
+        "details": "After winter crop harvest, prepare land properly. Add organic matter and correct pH before sowing."
+      }
+    ],
+    "crops": ["Okra", "Brinjal", "Watermelon", "Cucumber", "Summer Pulses"]
+  },
+  {
+    "id": 4,
+    "title": "Drought Management",
+    "season": "Year-round",
+    "description": "Strategies to cope with drought conditions",
+    "tips": [
+      {
+        "point": "Crop Selection",
+        "details": "Choose drought-tolerant varieties. Millets, pulses, oilseeds are suitable for drought areas."
+      },
+      {
+        "point": "Water Harvesting",
+        "details": "Construct farm ponds, bunds, and contour trenches to capture rainwater."
+      },
+      {
+        "point": "Mulching",
+        "details": "Apply 5-10cm organic mulch to reduce evaporation and maintain soil moisture."
+      },
+      {
+        "point": "Soil Improvement",
+        "details": "Add organic matter to increase water holding capacity. Practice deep ploughing."
+      },
+      {
+        "point": "Fertilizer Use",
+        "details": "Reduce nitrogen, increase potassium for drought tolerance. Use organic manure."
+      }
+    ],
+    "crops": ["Millets", "Pulses", "Oilseeds", "Sorghum"]
+  },
+  {
+    "id": 5,
+    "title": "Flood Management",
+    "season": "Monsoon/Post-Monsoon",
+    "description": "Strategies to protect crops from flooding",
+    "tips": [
+      {
+        "point": "Field Preparation",
+        "details": "Create raised beds for vegetable crops. Maintain proper drainage channels."
+      },
+      {
+        "point": "Crop Selection",
+        "details": "Select flood-tolerant crop varieties. Avoid crops sensitive to waterlogging."
+      },
+      {
+        "point": "Early Drainage",
+        "details": "Remove excess water immediately after flooding. Use pump sets if necessary."
+      },
+      {
+        "point": "Post-Flood Care",
+        "details": "Check for soil pH changes. Monitor nutrient deficiencies and pest outbreaks."
+      },
+      {
+        "point": "Insurance Claims",
+        "details": "Document crop loss and file claims under PMFBY within specified time frame."
+      }
+    ],
+    "crops": ["Rice", "Fish", "Aquatic Vegetables"]
+  }
+]

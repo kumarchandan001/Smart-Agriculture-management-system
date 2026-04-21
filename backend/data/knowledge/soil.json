@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "title": "Soil Testing",
+    "description": "Regular soil testing helps determine nutrient levels and soil health",
+    "frequency": "Every 2-3 years",
+    "bestTime": "After harvest or before sowing",
+    "parameters": [
+      {
+        "name": "pH",
+        "optimalRange": "6.5-7.5",
+        "importance": "Critical for nutrient availability",
+        "correction": "Add lime for acidic soil, sulfur for alkaline soil"
+      },
+      {
+        "name": "Organic Matter",
+        "optimalRange": "2-3%",
+        "importance": "Improves soil structure and water holding capacity",
+        "correction": "Add FYM, compost, or farm waste"
+      },
+      {
+        "name": "Nitrogen (N)",
+        "optimalRange": "200-250 kg/ha",
+        "importance": "Essential for leaf and stem growth",
+        "correction": "Apply nitrogen fertilizers or legume crops"
+      },
+      {
+        "name": "Phosphorus (P)",
+        "optimalRange": "15-25 kg/ha",
+        "importance": "Critical for root development and flowering",
+        "correction": "Apply phosphatic fertilizers or bone meal"
+      },
+      {
+        "name": "Potassium (K)",
+        "optimalRange": "150-200 kg/ha",
+        "importance": "Improves drought resistance and disease tolerance",
+        "correction": "Apply potassium fertilizers or wood ash"
+      }
+    ],
+    "tips": "Get soil samples from 5-6 spots in field, mix well, and send 500g sample to lab"
+  },
+  {
+    "id": 2,
+    "title": "Soil Conservation",
+    "description": "Practices to maintain and improve soil health",
+    "methods": [
+      {
+        "name": "Crop Rotation",
+        "benefit": "Reduces pest build-up, improves nitrogen fixation",
+        "practice": "Rotate cereal-legume crops in 2-3 year cycle"
+      },
+      {
+        "name": "Mulching",
+        "benefit": "Reduces soil erosion, conserves moisture, controls weeds",
+        "practice": "Use straw, leaves, or plastic mulch around plants"
+      },
+      {
+        "name": "Contour Ploughing",
+        "benefit": "Prevents soil erosion on slopes",
+        "practice": "Plough along contour lines instead of up-down slopes"
+      },
+      {
+        "name": "Composting",
+        "benefit": "Adds organic matter and improves soil structure",
+        "practice": "Mix farm waste, dung, and green manure in pit"
+      },
+      {
+        "name": "Green Manuring",
+        "benefit": "Adds nitrogen to soil, improves organic matter",
+        "practice": "Grow legume crops and plow them back"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Soil Types and Characteristics",
+    "description": "Understanding different soil types helps in crop selection",
+    "types": [
+      {
+        "name": "Loamy Soil",
+        "composition": "40% sand, 40% silt, 20% clay",
+        "crops": ["Wheat", "Rice", "Maize", "Vegetables"],
+        "waterRetention": "Good",
+        "workability": "Excellent",
+        "characteristics": "Ideal for most crops, good drainage, fertile"
+      },
+      {
+        "name": "Sandy Soil",
+        "composition": "80% sand, 15% silt, 5% clay",
+        "crops": ["Groundnut", "Watermelon", "Pulses"],
+        "waterRetention": "Poor",
+        "workability": "Easy",
+        "characteristics": "Quick drainage, less fertile, requires more irrigation"
+      },
+      {
+        "name": "Clay Soil",
+        "composition": "20% sand, 20% silt, 60% clay",
+        "crops": ["Rice", "Cotton", "Sugarcane"],
+        "waterRetention": "Excellent",
+        "workability": "Difficult",
+        "characteristics": "Water-logged, poor drainage, nutrient-rich"
+      },
+      {
+        "name": "Silty Soil",
+        "composition": "20% sand, 70% silt, 10% clay",
+        "crops": ["Wheat", "Rice", "Mustard"],
+        "waterRetention": "Good",
+        "workability": "Good",
+        "characteristics": "High fertility, moderate drainage, productive"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Micronutrients",
+    "description": "Essential micronutrients for crop growth",
+    "nutrients": [
+      {
+        "name": "Iron (Fe)",
+        "deficiencySymptoms": "Yellowing of young leaves with green veins",
+        "sources": ["FeSO4", "Iron chelates", "Compost"],
+        "crops": ["Citrus", "Grapes", "Vegetables"],
+        "optimalLevel": "4-10 mg/kg"
+      },
+      {
+        "name": "Zinc (Zn)",
+        "deficiencySymptoms": "Stunted growth, small distorted leaves",
+        "sources": ["ZnSO4", "Zinc chelates", "FYM"],
+        "crops": ["Maize", "Rice", "Citrus"],
+        "optimalLevel": "1-2 mg/kg"
+      },
+      {
+        "name": "Boron (B)",
+        "deficiencySymptoms": "Distorted leaves, hollow stems, poor flower formation",
+        "sources": ["Borax", "Boric acid"],
+        "crops": ["Cauliflower", "Broccoli", "Fruits"],
+        "optimalLevel": "0.5-2 mg/kg"
+      },
+      {
+        "name": "Copper (Cu)",
+        "deficiencySymptoms": "Wilting of leaves, loss of color",
+        "sources": ["CuSO4", "Copper chelates"],
+        "crops": ["Cereals", "Pulses"],
+        "optimalLevel": "0.2-0.5 mg/kg"
+      }
+    ]
+  }
+]

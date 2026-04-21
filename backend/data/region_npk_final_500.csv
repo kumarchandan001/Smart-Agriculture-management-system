@@ -1,0 +1,31 @@
+state,district,block,avg_n,avg_p,avg_k,avg_ph
+Maharashtra,Pune,Haveli,45,20,150,6.8
+Maharashtra,Pune,Bhor,48,22,155,6.9
+Maharashtra,Pune,Purandar,50,25,160,7.0
+Maharashtra,Ahmednagar,Sangamner,52,24,165,7.1
+Maharashtra,Ahmednagar,Newasa,55,26,170,7.2
+Maharashtra,Nashik,Igatpuri,48,21,158,6.7
+Maharashtra,Nashik,Chandwad,50,23,162,6.8
+Karnataka,Bengaluru,Anekal,42,19,140,6.5
+Karnataka,Bengaluru,Devanahalli,44,20,145,6.6
+Karnataka,Tumkur,Tumkur,46,22,150,6.7
+Karnataka,Tumkur,Kunigal,48,23,155,6.8
+Karnataka,Madhugiri,Madhugiri,50,25,160,7.0
+Madhya Pradesh,Indore,Indore,55,26,170,7.2
+Madhya Pradesh,Indore,Mhow,52,24,165,7.1
+Madhya Pradesh,Dhar,Dhar,50,23,160,7.0
+Madhya Pradesh,Dhar,Badnapur,48,22,158,6.9
+Uttar Pradesh,Varanasi,Varanasi,60,28,180,7.3
+Uttar Pradesh,Varanasi,Arazipur,62,30,185,7.4
+Uttar Pradesh,Allahabad,Allahabad,65,32,190,7.5
+Punjab,Ludhiana,Ludhiana,70,35,200,7.6
+Punjab,Ludhiana,Raikot,68,33,198,7.5
+Punjab,Amritsar,Amritsar,72,36,205,7.7
+Haryana,Hisar,Hisar,68,34,195,7.5
+Haryana,Hisar,Barwala,66,32,192,7.4
+West Bengal,Kolkata,Kolkata,55,26,170,6.8
+West Bengal,Kolkata,Baruipur,58,28,175,6.9
+Tamil Nadu,Chennai,Chennai,48,22,155,6.6
+Tamil Nadu,Coimbatore,Coimbatore,50,24,160,6.7
+Gujarat,Ahmedabad,Ahmedabad,52,25,165,7.0
+Gujarat,Ahmedabad,Daskroi,50,23,162,6.9

@@ -1,0 +1,82 @@
+/* --- Main Dashboard Wrapper --- */
+.dash-container {
+  padding: 24px;
+  max-width: 1100px;
+  margin: auto;
+  color: #16343a;
+  font-family: "Inter", sans-serif;
+}
+
+/* --- Header --- */
+.dash-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #16343a;
+}
+
+.dash-header p {
+  margin-top: 4px;
+  color: #2e5f63;
+  font-size: 15px;
+}
+
+/* --- Menu Bar --- */
+.menu-container {
+  margin-top: 20px;
+  background: #16343a;
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.menu-item {
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-size: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.menu-item.active {
+  background: #2ea49a;
+  border-color: #2ea49a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(46, 164, 154, 0.25);
+}
+
+/* --- Feature Box --- */
+.feature-box {
+  margin-top: 22px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  min-height: 260px;
+  transition: 0.25s;
+}
+
+.feature-placeholder {
+  font-size: 16px;
+  color: #2e5f63;
+  padding: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "name": "PM Kisan Samman Nidhi",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "launchYear": 2019,
+    "description": "Direct income support to farmers for land holdings",
+    "benefit": "₹6,000 per year (₹2,000 per installment, 3 times a year)",
+    "eligibility": [
+      "All farmers with cultivable land",
+      "Family members: farmer, spouse, minor children",
+      "Land holding: any size"
+    ],
+    "applicantType": "Small and marginal farmers and landholders",
+    "documents": [
+      "Aadhar Card",
+      "Bank Account Details",
+      "Land Records (Jamabandi/Khatauni)",
+      "Voter ID/Passport"
+    ],
+    "website": "https://pmkisan.gov.in",
+    "howToApply": "Online at pmkisan.gov.in or through Common Service Centre (CSC)"
+  },
+  {
+    "id": 2,
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "launchYear": 2016,
+    "description": "Crop insurance scheme to protect farmers against crop loss",
+    "benefit": "Insurance coverage for crop losses due to natural calamities",
+    "eligibility": [
+      "All farmers (landowners and sharecroppers)",
+      "Loanee and non-loanee farmers",
+      "All notified crops in the state"
+    ],
+    "applicantType": "All categories of farmers",
+    "premiumRate": "2% for Kharif crops, 1.5% for Rabi crops, 5% for horticulture",
+    "documents": [
+      "ID Proof (Aadhar/Voter ID)",
+      "Land Records",
+      "Bank Account",
+      "Sowing Certificate (for non-loanee)"
+    ],
+    "website": "https://pmfby.gov.in",
+    "howToApply": "Through insurance company agents or bank branches"
+  },
+  {
+    "id": 3,
+    "name": "Rashtriya Krishi Vikas Yojana (RKVY)",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "launchYear": 2007,
+    "description": "Agriculture development scheme focused on agriculture infrastructure",
+    "benefit": "Subsidy for agricultural projects and infrastructure development",
+    "eligibility": [
+      "Farmers, FPOs, agricultural enterprises",
+      "NGOs working in agriculture",
+      "State/Central govt agencies"
+    ],
+    "applicantType": "Individual farmers, farmer groups, agricultural entrepreneurs",
+    "coverage": "Up to 100% subsidy for identified sub-schemes",
+    "focusAreas": [
+      "Farm mechanization",
+      "Soil and water conservation",
+      "Horticulture development",
+      "Post-harvest management"
+    ],
+    "website": "https://rkvy.nic.in",
+    "howToApply": "District/State agriculture department"
+  },
+  {
+    "id": 4,
+    "name": "Sukanya Samriddhi Yojana",
+    "ministry": "Ministry of Women and Child Development",
+    "launchYear": 2015,
+    "description": "Savings scheme for girl child with agricultural benefits",
+    "benefit": "Interest rate varies, tax benefits, maturity bonus",
+    "eligibility": [
+      "Girl child below 10 years",
+      "Parents/guardians can open account"
+    ],
+    "applicantType": "Parents/guardians of girl children",
+    "documents": [
+      "Birth Certificate of girl child",
+      "ID Proof of parent/guardian",
+      "Address Proof",
+      "PAN (optional)"
+    ],
+    "interestRate": "7.4% per annum (as of 2024)",
+    "website": "https://nsiindia.gov.in",
+    "howToApply": "Any post office or authorized banks"
+  },
+  {
+    "id": 5,
+    "name": "Soil Health Card Scheme",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "launchYear": 2015,
+    "description": "Provides soil health cards to farmers with soil testing reports",
+    "benefit": "Free soil testing and personalized fertilizer recommendations",
+    "eligibility": [
+      "All farmers",
+      "All types of land holdings"
+    ],
+    "applicantType": "All categories of farmers",
+    "benefits": [
+      "Know soil nutrient status",
+      "Get fertilizer recommendations",
+      "Reduce unwanted fertilizer use",
+      "Improve productivity"
+    ],
+    "documents": [
+      "Aadhar Card",
+      "Land Records",
+      "Voter ID/Passport"
+    ],
+    "website": "https://soilhealth.dac.gov.in",
+    "howToApply": "Through block agriculture office or online portal"
+  }
+]

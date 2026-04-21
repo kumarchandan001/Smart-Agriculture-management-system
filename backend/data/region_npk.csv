@@ -1,0 +1,501 @@
+state,district,block,avg_n,avg_p,avg_k,avg_ph,notes
+Haryana,Panipat,Block-3,47,26,73,6.9,Sample NPK region data
+Tamil Nadu,Salem,Block-10,39,38,164,5.5,Sample NPK region data
+Gujarat,Surat,Block-9,53,22,50,5.7,Sample NPK region data
+Rajasthan,Udaipur,Block-17,120,27,93,5.0,Sample NPK region data
+Madhya Pradesh,Indore,Block-15,45,59,74,6.8,Sample NPK region data
+Bihar,Patna,Block-20,75,26,330,6.2,Sample NPK region data
+Haryana,Karnal,Block-8,80,28,183,5.3,Sample NPK region data
+Maharashtra,Nagpur,Block-5,137,56,335,6.1,Sample NPK region data
+Haryana,Rohtak,Block-10,81,39,317,7.2,Sample NPK region data
+Haryana,Karnal,Block-15,103,53,104,8.1,Sample NPK region data
+Haryana,Hisar,Block-19,26,30,234,5.8,Sample NPK region data
+Bihar,Bhagalpur,Block-11,43,23,323,5.4,Sample NPK region data
+Tamil Nadu,Madurai,Block-18,130,9,190,5.1,Sample NPK region data
+Karnataka,Kalaburagi,Block-16,36,13,146,5.4,Sample NPK region data
+Haryana,Panipat,Block-3,65,45,327,6.7,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-13,138,29,201,5.9,Sample NPK region data
+Tamil Nadu,Chennai,Block-1,106,18,343,6.3,Sample NPK region data
+Gujarat,Vadodara,Block-18,97,52,162,7.2,Sample NPK region data
+Karnataka,Kalaburagi,Block-17,70,43,228,6.7,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-14,68,52,214,6.7,Sample NPK region data
+Rajasthan,Jodhpur,Block-18,63,34,145,5.4,Sample NPK region data
+Bihar,Purnia,Block-6,64,15,303,7.1,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-7,54,15,231,8.3,Sample NPK region data
+Rajasthan,Udaipur,Block-1,26,8,201,6.9,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-6,105,53,133,5.4,Sample NPK region data
+Maharashtra,Aurangabad,Block-7,39,47,261,5.7,Sample NPK region data
+Gujarat,Ahmedabad,Block-7,91,44,65,8.1,Sample NPK region data
+Haryana,Gurgaon,Block-2,133,49,133,5.4,Sample NPK region data
+Rajasthan,Ajmer,Block-1,106,28,91,5.9,Sample NPK region data
+Bihar,Gaya,Block-6,45,8,114,6.8,Sample NPK region data
+Haryana,Gurgaon,Block-14,76,13,164,6.5,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-16,29,33,197,7.6,Sample NPK region data
+Uttar Pradesh,Meerut,Block-15,126,36,319,7.0,Sample NPK region data
+Bihar,Gaya,Block-4,126,60,274,5.9,Sample NPK region data
+Bihar,Gaya,Block-14,115,6,121,6.0,Sample NPK region data
+Gujarat,Surat,Block-4,135,54,60,6.4,Sample NPK region data
+Tamil Nadu,Madurai,Block-6,138,25,78,5.4,Sample NPK region data
+Rajasthan,Udaipur,Block-16,43,54,223,5.6,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-12,89,55,286,8.2,Sample NPK region data
+Gujarat,Vadodara,Block-2,86,28,212,6.4,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-10,79,20,172,8.3,Sample NPK region data
+Bihar,Muzaffarpur,Block-5,112,7,240,7.5,Sample NPK region data
+Tamil Nadu,Madurai,Block-10,25,24,296,7.1,Sample NPK region data
+Uttar Pradesh,Meerut,Block-8,107,14,191,8.3,Sample NPK region data
+Punjab,Ludhiana,Block-14,55,26,77,8.4,Sample NPK region data
+Maharashtra,Nagpur,Block-17,113,17,273,6.3,Sample NPK region data
+Haryana,Rohtak,Block-2,33,51,55,6.1,Sample NPK region data
+Haryana,Panipat,Block-20,104,35,67,6.2,Sample NPK region data
+Tamil Nadu,Salem,Block-3,128,13,300,7.7,Sample NPK region data
+Bihar,Bhagalpur,Block-17,99,24,81,5.6,Sample NPK region data
+Karnataka,Kalaburagi,Block-7,82,34,152,6.3,Sample NPK region data
+Karnataka,Belagavi,Block-11,90,46,121,8.1,Sample NPK region data
+Haryana,Gurgaon,Block-2,68,41,134,7.1,Sample NPK region data
+Bihar,Gaya,Block-4,57,56,222,5.6,Sample NPK region data
+Maharashtra,Aurangabad,Block-5,34,11,173,5.1,Sample NPK region data
+Rajasthan,Ajmer,Block-12,85,11,122,8.2,Sample NPK region data
+Punjab,Jalandhar,Block-4,56,20,291,7.5,Sample NPK region data
+Punjab,Firozpur,Block-7,32,58,336,6.5,Sample NPK region data
+Tamil Nadu,Madurai,Block-12,111,6,225,6.7,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-8,74,14,304,6.2,Sample NPK region data
+Bihar,Gaya,Block-19,87,53,324,6.8,Sample NPK region data
+Bihar,Bhagalpur,Block-20,100,11,52,7.2,Sample NPK region data
+Uttar Pradesh,Meerut,Block-5,136,20,158,5.8,Sample NPK region data
+Rajasthan,Jodhpur,Block-11,67,20,140,8.0,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-19,69,27,65,8.3,Sample NPK region data
+Uttar Pradesh,Agra,Block-4,87,33,304,6.1,Sample NPK region data
+Madhya Pradesh,Indore,Block-6,23,12,258,5.9,Sample NPK region data
+Karnataka,Bengaluru,Block-18,87,26,174,6.7,Sample NPK region data
+Karnataka,Bengaluru,Block-10,73,53,237,5.2,Sample NPK region data
+Haryana,Panipat,Block-6,71,37,303,6.9,Sample NPK region data
+Gujarat,Vadodara,Block-2,26,24,56,6.1,Sample NPK region data
+Karnataka,Belagavi,Block-10,89,29,207,5.0,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-14,89,57,258,6.0,Sample NPK region data
+Gujarat,Vadodara,Block-18,35,14,160,7.2,Sample NPK region data
+Gujarat,Surat,Block-8,121,29,183,5.3,Sample NPK region data
+Rajasthan,Jaipur,Block-7,71,37,284,7.8,Sample NPK region data
+Maharashtra,Nashik,Block-11,90,51,269,5.6,Sample NPK region data
+Maharashtra,Pune,Block-9,127,30,58,7.6,Sample NPK region data
+Gujarat,Vadodara,Block-15,138,12,346,7.6,Sample NPK region data
+Karnataka,Belagavi,Block-4,23,7,74,6.1,Sample NPK region data
+Punjab,Ludhiana,Block-12,62,44,262,5.2,Sample NPK region data
+Maharashtra,Nagpur,Block-2,100,21,320,8.0,Sample NPK region data
+Maharashtra,Nagpur,Block-15,48,38,65,5.4,Sample NPK region data
+Karnataka,Kalaburagi,Block-16,70,18,81,8.0,Sample NPK region data
+Tamil Nadu,Chennai,Block-9,97,48,210,7.1,Sample NPK region data
+Maharashtra,Aurangabad,Block-17,75,27,75,8.1,Sample NPK region data
+Maharashtra,Nashik,Block-14,20,53,278,6.6,Sample NPK region data
+Maharashtra,Pune,Block-9,105,49,187,8.4,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-5,62,57,317,5.1,Sample NPK region data
+Haryana,Hisar,Block-1,72,44,313,6.5,Sample NPK region data
+Maharashtra,Pune,Block-1,48,57,187,7.4,Sample NPK region data
+Rajasthan,Jaipur,Block-9,51,51,263,7.7,Sample NPK region data
+Tamil Nadu,Madurai,Block-10,38,56,78,8.3,Sample NPK region data
+Haryana,Rohtak,Block-20,139,48,102,5.3,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-12,44,60,97,6.5,Sample NPK region data
+Tamil Nadu,Chennai,Block-11,125,33,330,5.2,Sample NPK region data
+Maharashtra,Pune,Block-15,88,7,306,6.7,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-18,119,25,248,6.8,Sample NPK region data
+Karnataka,Kalaburagi,Block-16,58,47,219,5.5,Sample NPK region data
+Rajasthan,Jodhpur,Block-9,128,38,280,8.0,Sample NPK region data
+Rajasthan,Bikaner,Block-8,44,59,258,7.9,Sample NPK region data
+Rajasthan,Udaipur,Block-14,104,46,310,5.3,Sample NPK region data
+Gujarat,Ahmedabad,Block-2,94,47,217,7.6,Sample NPK region data
+Uttar Pradesh,Varanasi,Block-6,103,31,101,6.4,Sample NPK region data
+Rajasthan,Jaipur,Block-16,31,57,334,7.7,Sample NPK region data
+Maharashtra,Aurangabad,Block-12,105,48,307,6.6,Sample NPK region data
+Karnataka,Bengaluru,Block-11,59,42,319,6.4,Sample NPK region data
+Rajasthan,Jaipur,Block-17,77,58,51,6.2,Sample NPK region data
+Punjab,Jalandhar,Block-10,100,30,138,6.5,Sample NPK region data
+Bihar,Patna,Block-3,79,12,96,8.0,Sample NPK region data
+Rajasthan,Jaipur,Block-2,113,30,340,7.4,Sample NPK region data
+Punjab,Amritsar,Block-19,89,28,135,5.2,Sample NPK region data
+Gujarat,Rajkot,Block-3,121,24,322,5.5,Sample NPK region data
+Madhya Pradesh,Indore,Block-5,40,49,234,8.2,Sample NPK region data
+Gujarat,Bhavnagar,Block-13,57,46,189,8.3,Sample NPK region data
+Rajasthan,Jaipur,Block-20,66,7,315,6.9,Sample NPK region data
+Gujarat,Surat,Block-4,88,60,98,8.5,Sample NPK region data
+Madhya Pradesh,Indore,Block-14,83,54,75,6.5,Sample NPK region data
+Rajasthan,Bikaner,Block-7,137,40,169,6.9,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-8,98,34,63,5.4,Sample NPK region data
+Maharashtra,Nashik,Block-3,95,17,60,6.3,Sample NPK region data
+Rajasthan,Udaipur,Block-3,66,46,239,5.3,Sample NPK region data
+Haryana,Gurgaon,Block-19,65,24,111,6.5,Sample NPK region data
+Rajasthan,Jodhpur,Block-16,69,28,308,6.0,Sample NPK region data
+Haryana,Hisar,Block-18,100,10,149,5.7,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-9,67,22,121,5.3,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-15,87,22,206,7.4,Sample NPK region data
+Maharashtra,Solapur,Block-12,85,47,212,6.3,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-13,102,37,341,7.8,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-14,22,28,246,5.5,Sample NPK region data
+Karnataka,Mysore,Block-14,75,27,201,6.3,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-1,135,37,272,8.0,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-1,54,60,257,7.1,Sample NPK region data
+Uttar Pradesh,Varanasi,Block-11,127,23,89,6.2,Sample NPK region data
+Gujarat,Surat,Block-17,35,21,74,7.1,Sample NPK region data
+Rajasthan,Jodhpur,Block-18,54,33,235,5.3,Sample NPK region data
+Tamil Nadu,Chennai,Block-10,95,57,180,7.0,Sample NPK region data
+Haryana,Gurgaon,Block-19,109,30,179,5.3,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-8,25,8,51,7.0,Sample NPK region data
+Maharashtra,Nagpur,Block-20,114,22,350,7.9,Sample NPK region data
+Karnataka,Kalaburagi,Block-14,56,12,317,8.1,Sample NPK region data
+Gujarat,Vadodara,Block-7,113,10,305,5.7,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-5,112,32,110,5.4,Sample NPK region data
+Punjab,Amritsar,Block-18,115,7,183,6.5,Sample NPK region data
+Haryana,Rohtak,Block-5,118,44,213,5.2,Sample NPK region data
+Maharashtra,Pune,Block-6,134,52,73,7.2,Sample NPK region data
+Maharashtra,Aurangabad,Block-17,77,31,164,5.8,Sample NPK region data
+Gujarat,Ahmedabad,Block-12,133,5,294,5.8,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-14,99,26,203,6.4,Sample NPK region data
+Haryana,Hisar,Block-2,109,56,337,6.2,Sample NPK region data
+Gujarat,Vadodara,Block-17,109,22,256,8.2,Sample NPK region data
+Haryana,Gurgaon,Block-16,111,11,137,5.7,Sample NPK region data
+Punjab,Firozpur,Block-6,80,28,283,6.8,Sample NPK region data
+Gujarat,Ahmedabad,Block-5,109,22,203,8.2,Sample NPK region data
+Uttar Pradesh,Agra,Block-4,62,40,139,6.5,Sample NPK region data
+Bihar,Patna,Block-14,80,28,222,7.9,Sample NPK region data
+Maharashtra,Solapur,Block-1,137,13,154,5.4,Sample NPK region data
+Maharashtra,Pune,Block-13,61,54,51,6.6,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-19,107,35,324,7.5,Sample NPK region data
+Karnataka,Kalaburagi,Block-14,100,13,109,7.4,Sample NPK region data
+Rajasthan,Jaipur,Block-19,50,16,228,8.2,Sample NPK region data
+Bihar,Purnia,Block-9,27,35,114,7.1,Sample NPK region data
+Tamil Nadu,Chennai,Block-1,130,24,128,8.2,Sample NPK region data
+Gujarat,Vadodara,Block-14,78,41,108,8.3,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-11,93,5,164,7.2,Sample NPK region data
+Haryana,Rohtak,Block-2,32,17,149,5.8,Sample NPK region data
+Punjab,Ludhiana,Block-17,42,7,216,6.2,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-9,69,8,264,6.7,Sample NPK region data
+Karnataka,Dharwad,Block-8,92,29,333,7.1,Sample NPK region data
+Bihar,Muzaffarpur,Block-19,26,35,218,7.6,Sample NPK region data
+Bihar,Gaya,Block-15,45,31,330,6.9,Sample NPK region data
+Maharashtra,Nashik,Block-15,42,55,57,5.4,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-19,20,44,51,7.6,Sample NPK region data
+Karnataka,Dharwad,Block-2,94,42,135,8.0,Sample NPK region data
+Uttar Pradesh,Agra,Block-9,31,16,125,6.8,Sample NPK region data
+Uttar Pradesh,Meerut,Block-7,127,19,327,6.7,Sample NPK region data
+Tamil Nadu,Chennai,Block-9,22,12,154,7.0,Sample NPK region data
+Karnataka,Dharwad,Block-5,82,47,349,6.7,Sample NPK region data
+Bihar,Patna,Block-1,109,35,327,5.2,Sample NPK region data
+Gujarat,Rajkot,Block-20,47,19,200,5.0,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-18,78,42,77,5.4,Sample NPK region data
+Rajasthan,Ajmer,Block-13,44,16,299,7.3,Sample NPK region data
+Bihar,Gaya,Block-4,44,48,84,5.6,Sample NPK region data
+Rajasthan,Ajmer,Block-5,21,50,60,5.1,Sample NPK region data
+Karnataka,Dharwad,Block-10,64,54,136,5.7,Sample NPK region data
+Maharashtra,Aurangabad,Block-16,134,5,148,8.1,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-20,78,54,109,5.6,Sample NPK region data
+Uttar Pradesh,Agra,Block-5,101,44,162,6.7,Sample NPK region data
+Karnataka,Dharwad,Block-12,23,14,132,5.4,Sample NPK region data
+Punjab,Jalandhar,Block-12,133,19,332,7.9,Sample NPK region data
+Karnataka,Bengaluru,Block-10,139,56,200,5.8,Sample NPK region data
+Maharashtra,Nagpur,Block-5,48,34,130,7.6,Sample NPK region data
+Karnataka,Kalaburagi,Block-15,129,22,235,6.7,Sample NPK region data
+Gujarat,Surat,Block-17,92,23,69,7.5,Sample NPK region data
+Bihar,Purnia,Block-1,62,54,254,6.4,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-18,59,49,148,6.1,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-12,82,43,325,7.3,Sample NPK region data
+Maharashtra,Aurangabad,Block-11,103,59,237,6.3,Sample NPK region data
+Rajasthan,Udaipur,Block-10,104,15,109,7.5,Sample NPK region data
+Maharashtra,Pune,Block-10,65,50,274,7.5,Sample NPK region data
+Karnataka,Bengaluru,Block-7,79,37,323,6.6,Sample NPK region data
+Karnataka,Belagavi,Block-1,79,13,244,7.9,Sample NPK region data
+Bihar,Patna,Block-12,76,9,125,7.2,Sample NPK region data
+Karnataka,Bengaluru,Block-17,38,23,155,6.6,Sample NPK region data
+Punjab,Amritsar,Block-4,62,29,220,6.5,Sample NPK region data
+Maharashtra,Nagpur,Block-7,52,50,206,7.4,Sample NPK region data
+Gujarat,Vadodara,Block-14,121,26,267,7.8,Sample NPK region data
+Uttar Pradesh,Agra,Block-12,24,17,70,6.8,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-20,106,12,346,5.2,Sample NPK region data
+Haryana,Rohtak,Block-9,64,42,108,7.0,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-9,138,40,234,7.7,Sample NPK region data
+Rajasthan,Jaipur,Block-5,58,48,340,8.3,Sample NPK region data
+Tamil Nadu,Salem,Block-2,89,15,84,7.7,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-2,138,49,86,7.9,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-4,26,13,85,8.5,Sample NPK region data
+Bihar,Purnia,Block-12,110,19,315,7.8,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-4,62,36,221,7.3,Sample NPK region data
+Tamil Nadu,Salem,Block-12,34,51,301,5.2,Sample NPK region data
+Punjab,Jalandhar,Block-18,75,8,290,6.5,Sample NPK region data
+Madhya Pradesh,Indore,Block-15,31,12,76,8.5,Sample NPK region data
+Gujarat,Ahmedabad,Block-6,37,46,306,6.7,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-14,68,56,220,6.8,Sample NPK region data
+Bihar,Patna,Block-6,136,37,271,8.4,Sample NPK region data
+Karnataka,Belagavi,Block-8,95,23,216,6.4,Sample NPK region data
+Karnataka,Mysore,Block-17,55,60,164,6.9,Sample NPK region data
+Maharashtra,Pune,Block-15,47,17,174,7.2,Sample NPK region data
+Tamil Nadu,Madurai,Block-7,34,22,342,8.3,Sample NPK region data
+Maharashtra,Solapur,Block-3,91,6,266,6.9,Sample NPK region data
+Punjab,Amritsar,Block-8,57,52,337,6.4,Sample NPK region data
+Maharashtra,Nagpur,Block-19,69,32,70,7.2,Sample NPK region data
+Rajasthan,Udaipur,Block-18,76,13,294,7.6,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-12,62,9,141,5.8,Sample NPK region data
+Rajasthan,Bikaner,Block-2,118,36,135,6.9,Sample NPK region data
+Punjab,Patiala,Block-15,90,27,278,7.3,Sample NPK region data
+Rajasthan,Ajmer,Block-16,77,50,288,7.4,Sample NPK region data
+Punjab,Amritsar,Block-1,87,25,282,6.5,Sample NPK region data
+Tamil Nadu,Salem,Block-7,134,36,289,5.0,Sample NPK region data
+Uttar Pradesh,Agra,Block-16,75,13,67,7.0,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-13,53,12,108,5.9,Sample NPK region data
+Punjab,Patiala,Block-4,103,39,309,7.8,Sample NPK region data
+Tamil Nadu,Chennai,Block-1,135,21,235,5.4,Sample NPK region data
+Bihar,Gaya,Block-9,124,14,297,7.4,Sample NPK region data
+Gujarat,Bhavnagar,Block-14,72,26,91,7.2,Sample NPK region data
+Gujarat,Vadodara,Block-6,95,36,200,5.4,Sample NPK region data
+Maharashtra,Pune,Block-1,41,43,77,6.0,Sample NPK region data
+Uttar Pradesh,Meerut,Block-8,33,50,68,8.5,Sample NPK region data
+Rajasthan,Udaipur,Block-15,83,53,177,5.0,Sample NPK region data
+Bihar,Bhagalpur,Block-2,78,50,93,6.6,Sample NPK region data
+Karnataka,Kalaburagi,Block-9,131,39,221,7.8,Sample NPK region data
+Tamil Nadu,Salem,Block-12,20,16,337,8.4,Sample NPK region data
+Maharashtra,Nashik,Block-16,61,40,92,5.3,Sample NPK region data
+Haryana,Panipat,Block-10,110,53,275,8.2,Sample NPK region data
+Tamil Nadu,Madurai,Block-11,36,32,109,7.5,Sample NPK region data
+Gujarat,Ahmedabad,Block-13,130,30,151,7.7,Sample NPK region data
+Karnataka,Kalaburagi,Block-4,65,16,105,7.4,Sample NPK region data
+Gujarat,Rajkot,Block-11,85,48,182,7.8,Sample NPK region data
+Gujarat,Vadodara,Block-13,92,18,313,7.1,Sample NPK region data
+Punjab,Ludhiana,Block-19,120,29,216,7.3,Sample NPK region data
+Uttar Pradesh,Agra,Block-10,34,48,202,7.1,Sample NPK region data
+Tamil Nadu,Chennai,Block-11,98,58,57,7.5,Sample NPK region data
+Haryana,Hisar,Block-19,107,16,226,6.7,Sample NPK region data
+Karnataka,Bengaluru,Block-18,59,57,263,7.6,Sample NPK region data
+Karnataka,Kalaburagi,Block-10,103,14,51,5.3,Sample NPK region data
+Maharashtra,Solapur,Block-12,96,34,64,5.7,Sample NPK region data
+Karnataka,Belagavi,Block-5,47,56,124,5.4,Sample NPK region data
+Maharashtra,Aurangabad,Block-3,30,14,164,7.5,Sample NPK region data
+Karnataka,Belagavi,Block-14,39,54,261,8.4,Sample NPK region data
+Tamil Nadu,Chennai,Block-9,120,58,89,8.5,Sample NPK region data
+Haryana,Hisar,Block-17,130,32,308,8.2,Sample NPK region data
+Gujarat,Ahmedabad,Block-7,122,39,246,7.0,Sample NPK region data
+Punjab,Firozpur,Block-15,115,44,311,6.3,Sample NPK region data
+Punjab,Ludhiana,Block-5,61,47,90,6.4,Sample NPK region data
+Punjab,Patiala,Block-5,130,34,325,7.8,Sample NPK region data
+Maharashtra,Nagpur,Block-4,139,5,211,7.6,Sample NPK region data
+Punjab,Ludhiana,Block-14,139,14,337,6.5,Sample NPK region data
+Uttar Pradesh,Varanasi,Block-17,33,35,86,5.4,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-2,30,7,241,7.3,Sample NPK region data
+Rajasthan,Jodhpur,Block-19,52,22,185,7.8,Sample NPK region data
+Bihar,Purnia,Block-14,130,25,276,6.4,Sample NPK region data
+Maharashtra,Solapur,Block-2,35,23,230,8.2,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-14,140,17,147,6.1,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-2,133,48,332,6.3,Sample NPK region data
+Rajasthan,Jodhpur,Block-17,91,5,92,7.2,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-15,81,12,328,7.3,Sample NPK region data
+Punjab,Amritsar,Block-9,71,23,76,7.8,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-15,30,28,182,6.0,Sample NPK region data
+Tamil Nadu,Chennai,Block-11,46,46,282,5.6,Sample NPK region data
+Gujarat,Ahmedabad,Block-1,58,6,153,6.3,Sample NPK region data
+Haryana,Gurgaon,Block-6,97,32,240,5.8,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-11,91,36,281,7.5,Sample NPK region data
+Rajasthan,Jaipur,Block-8,36,39,112,7.7,Sample NPK region data
+Bihar,Gaya,Block-14,64,12,271,5.3,Sample NPK region data
+Bihar,Purnia,Block-4,23,59,125,5.0,Sample NPK region data
+Karnataka,Belagavi,Block-20,87,29,269,7.7,Sample NPK region data
+Bihar,Patna,Block-16,96,56,350,8.1,Sample NPK region data
+Karnataka,Dharwad,Block-2,81,38,232,7.2,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-19,138,35,180,8.4,Sample NPK region data
+Bihar,Purnia,Block-13,104,16,53,8.0,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-1,98,22,244,6.5,Sample NPK region data
+Gujarat,Ahmedabad,Block-1,130,51,56,6.7,Sample NPK region data
+Punjab,Firozpur,Block-6,96,52,143,7.1,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-19,109,10,237,6.4,Sample NPK region data
+Haryana,Panipat,Block-7,53,17,115,5.0,Sample NPK region data
+Gujarat,Vadodara,Block-15,82,34,346,5.9,Sample NPK region data
+Tamil Nadu,Salem,Block-18,75,13,211,6.5,Sample NPK region data
+Haryana,Hisar,Block-13,116,43,74,5.0,Sample NPK region data
+Karnataka,Bengaluru,Block-6,47,10,291,6.3,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-10,102,17,209,6.0,Sample NPK region data
+Haryana,Gurgaon,Block-3,90,25,266,5.9,Sample NPK region data
+Rajasthan,Ajmer,Block-2,56,14,267,6.7,Sample NPK region data
+Bihar,Patna,Block-15,29,35,244,6.1,Sample NPK region data
+Haryana,Karnal,Block-14,32,60,232,7.7,Sample NPK region data
+Tamil Nadu,Salem,Block-4,20,40,83,7.3,Sample NPK region data
+Punjab,Jalandhar,Block-16,134,55,340,7.1,Sample NPK region data
+Uttar Pradesh,Agra,Block-8,34,37,157,7.6,Sample NPK region data
+Rajasthan,Bikaner,Block-19,77,32,133,8.2,Sample NPK region data
+Madhya Pradesh,Indore,Block-13,57,30,304,5.7,Sample NPK region data
+Karnataka,Mysore,Block-17,126,55,79,7.8,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-13,65,20,244,7.5,Sample NPK region data
+Haryana,Gurgaon,Block-6,42,23,184,7.1,Sample NPK region data
+Punjab,Jalandhar,Block-15,74,39,332,6.8,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-18,81,60,169,5.7,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-7,72,59,339,6.6,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-13,117,58,335,6.1,Sample NPK region data
+Rajasthan,Jodhpur,Block-2,124,45,99,5.4,Sample NPK region data
+Karnataka,Belagavi,Block-9,74,6,259,6.2,Sample NPK region data
+Karnataka,Bengaluru,Block-5,104,60,114,7.1,Sample NPK region data
+Tamil Nadu,Salem,Block-9,61,11,342,8.0,Sample NPK region data
+Maharashtra,Nagpur,Block-15,109,49,112,5.4,Sample NPK region data
+Maharashtra,Nashik,Block-15,35,31,296,7.7,Sample NPK region data
+Maharashtra,Pune,Block-9,41,45,71,5.9,Sample NPK region data
+Haryana,Gurgaon,Block-16,95,42,128,5.1,Sample NPK region data
+Rajasthan,Jodhpur,Block-20,35,20,74,7.5,Sample NPK region data
+Gujarat,Bhavnagar,Block-17,85,58,306,7.2,Sample NPK region data
+Bihar,Bhagalpur,Block-14,49,19,88,5.6,Sample NPK region data
+Tamil Nadu,Chennai,Block-8,24,48,230,8.0,Sample NPK region data
+Maharashtra,Aurangabad,Block-1,55,25,245,5.9,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-1,136,33,107,6.9,Sample NPK region data
+Gujarat,Ahmedabad,Block-12,56,21,323,5.2,Sample NPK region data
+Karnataka,Bengaluru,Block-14,99,22,217,7.5,Sample NPK region data
+Gujarat,Surat,Block-13,140,26,79,8.1,Sample NPK region data
+Maharashtra,Nashik,Block-2,110,60,169,7.1,Sample NPK region data
+Maharashtra,Aurangabad,Block-6,131,18,127,5.4,Sample NPK region data
+Rajasthan,Jaipur,Block-18,98,51,167,7.4,Sample NPK region data
+Rajasthan,Jaipur,Block-16,24,59,327,5.2,Sample NPK region data
+Tamil Nadu,Salem,Block-8,118,60,68,8.1,Sample NPK region data
+Karnataka,Mysore,Block-3,32,31,186,6.7,Sample NPK region data
+Maharashtra,Solapur,Block-20,83,36,77,8.1,Sample NPK region data
+Punjab,Patiala,Block-10,88,48,350,5.5,Sample NPK region data
+Uttar Pradesh,Agra,Block-3,136,20,165,7.4,Sample NPK region data
+Gujarat,Surat,Block-13,44,32,136,6.0,Sample NPK region data
+Uttar Pradesh,Kanpur,Block-12,26,12,240,7.5,Sample NPK region data
+Rajasthan,Jodhpur,Block-19,45,20,86,7.4,Sample NPK region data
+Karnataka,Bengaluru,Block-4,121,25,182,5.8,Sample NPK region data
+Tamil Nadu,Salem,Block-9,29,45,123,6.8,Sample NPK region data
+Gujarat,Surat,Block-12,99,19,110,5.7,Sample NPK region data
+Haryana,Panipat,Block-8,85,53,177,7.6,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-1,133,51,108,5.8,Sample NPK region data
+Gujarat,Surat,Block-6,128,25,344,6.5,Sample NPK region data
+Uttar Pradesh,Varanasi,Block-8,94,12,261,7.1,Sample NPK region data
+Maharashtra,Nashik,Block-19,122,60,224,8.5,Sample NPK region data
+Gujarat,Rajkot,Block-6,76,19,206,5.8,Sample NPK region data
+Bihar,Gaya,Block-4,33,23,225,7.0,Sample NPK region data
+Haryana,Rohtak,Block-16,77,11,287,7.2,Sample NPK region data
+Punjab,Firozpur,Block-20,26,36,161,8.1,Sample NPK region data
+Tamil Nadu,Chennai,Block-1,43,32,282,5.7,Sample NPK region data
+Rajasthan,Jodhpur,Block-20,130,57,224,6.3,Sample NPK region data
+Punjab,Jalandhar,Block-4,94,57,313,5.4,Sample NPK region data
+Haryana,Karnal,Block-15,24,39,59,6.7,Sample NPK region data
+Bihar,Purnia,Block-3,93,55,307,6.4,Sample NPK region data
+Tamil Nadu,Salem,Block-14,53,5,202,8.2,Sample NPK region data
+Madhya Pradesh,Indore,Block-6,115,34,192,7.8,Sample NPK region data
+Bihar,Patna,Block-13,90,31,343,5.2,Sample NPK region data
+Haryana,Karnal,Block-7,76,9,157,7.4,Sample NPK region data
+Punjab,Amritsar,Block-2,61,11,175,6.4,Sample NPK region data
+Gujarat,Surat,Block-15,117,26,279,6.4,Sample NPK region data
+Gujarat,Rajkot,Block-14,61,15,188,6.8,Sample NPK region data
+Karnataka,Mysore,Block-14,83,60,186,8.2,Sample NPK region data
+Tamil Nadu,Thanjavur,Block-6,131,37,60,7.6,Sample NPK region data
+Uttar Pradesh,Meerut,Block-5,24,8,154,8.0,Sample NPK region data
+Haryana,Gurgaon,Block-5,119,8,165,6.8,Sample NPK region data
+Gujarat,Vadodara,Block-13,89,21,291,7.1,Sample NPK region data
+Karnataka,Bengaluru,Block-14,60,8,203,6.1,Sample NPK region data
+Punjab,Ludhiana,Block-8,65,28,166,5.5,Sample NPK region data
+Gujarat,Surat,Block-19,32,28,162,5.5,Sample NPK region data
+Karnataka,Kalaburagi,Block-9,106,38,101,5.1,Sample NPK region data
+Gujarat,Vadodara,Block-19,42,24,134,8.2,Sample NPK region data
+Bihar,Gaya,Block-13,77,35,67,5.6,Sample NPK region data
+Madhya Pradesh,Ujjain,Block-18,24,60,220,5.0,Sample NPK region data
+Tamil Nadu,Chennai,Block-6,21,23,74,6.9,Sample NPK region data
+Maharashtra,Nagpur,Block-8,86,24,147,6.9,Sample NPK region data
+Haryana,Karnal,Block-5,122,35,300,6.5,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-20,77,33,344,5.2,Sample NPK region data
+Haryana,Gurgaon,Block-14,21,53,193,8.0,Sample NPK region data
+Rajasthan,Ajmer,Block-18,125,15,122,7.4,Sample NPK region data
+Bihar,Patna,Block-18,114,38,217,6.2,Sample NPK region data
+Karnataka,Bengaluru,Block-14,34,26,295,7.2,Sample NPK region data
+Punjab,Ludhiana,Block-7,104,12,133,7.1,Sample NPK region data
+Maharashtra,Nashik,Block-11,65,42,350,7.2,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-8,57,51,189,6.2,Sample NPK region data
+Gujarat,Bhavnagar,Block-4,126,20,64,6.7,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-3,75,58,132,5.9,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-19,115,8,292,5.6,Sample NPK region data
+Uttar Pradesh,Meerut,Block-15,45,9,217,8.1,Sample NPK region data
+Tamil Nadu,Madurai,Block-16,111,24,124,6.6,Sample NPK region data
+Rajasthan,Jaipur,Block-7,68,21,141,7.0,Sample NPK region data
+Maharashtra,Pune,Block-7,121,6,136,5.4,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-17,63,52,67,7.1,Sample NPK region data
+Haryana,Panipat,Block-16,58,19,97,7.7,Sample NPK region data
+Gujarat,Vadodara,Block-13,54,45,62,7.9,Sample NPK region data
+Haryana,Rohtak,Block-2,93,35,252,6.1,Sample NPK region data
+Punjab,Patiala,Block-2,88,15,86,5.1,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-8,24,46,102,8.0,Sample NPK region data
+Gujarat,Rajkot,Block-9,65,39,230,6.9,Sample NPK region data
+Gujarat,Ahmedabad,Block-20,57,56,349,7.7,Sample NPK region data
+Tamil Nadu,Coimbatore,Block-10,124,18,246,7.1,Sample NPK region data
+Karnataka,Mysore,Block-18,33,33,297,5.9,Sample NPK region data
+Rajasthan,Jaipur,Block-15,122,45,322,8.1,Sample NPK region data
+Maharashtra,Nagpur,Block-8,138,54,248,5.2,Sample NPK region data
+Maharashtra,Solapur,Block-9,134,56,228,5.2,Sample NPK region data
+Bihar,Bhagalpur,Block-1,64,28,123,6.4,Sample NPK region data
+Haryana,Hisar,Block-3,111,50,55,6.8,Sample NPK region data
+Rajasthan,Udaipur,Block-17,50,43,262,8.5,Sample NPK region data
+Haryana,Gurgaon,Block-7,61,8,350,5.1,Sample NPK region data
+Maharashtra,Aurangabad,Block-20,53,52,114,7.5,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-1,106,52,94,7.6,Sample NPK region data
+Maharashtra,Nagpur,Block-11,64,54,52,8.3,Sample NPK region data
+Haryana,Karnal,Block-8,108,16,167,5.2,Sample NPK region data
+Bihar,Purnia,Block-13,86,14,119,5.7,Sample NPK region data
+Bihar,Bhagalpur,Block-3,114,50,312,5.6,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-20,78,14,261,6.8,Sample NPK region data
+Gujarat,Vadodara,Block-20,42,22,291,6.8,Sample NPK region data
+Bihar,Patna,Block-1,81,23,239,6.5,Sample NPK region data
+Maharashtra,Aurangabad,Block-4,69,29,140,8.3,Sample NPK region data
+Bihar,Patna,Block-13,105,59,54,5.4,Sample NPK region data
+Tamil Nadu,Chennai,Block-2,34,37,134,5.6,Sample NPK region data
+Haryana,Panipat,Block-1,106,23,97,6.0,Sample NPK region data
+Gujarat,Rajkot,Block-11,98,23,146,7.0,Sample NPK region data
+Uttar Pradesh,Agra,Block-11,80,18,342,5.2,Sample NPK region data
+Bihar,Gaya,Block-18,133,11,270,6.3,Sample NPK region data
+Uttar Pradesh,Lucknow,Block-3,117,45,86,7.3,Sample NPK region data
+Maharashtra,Solapur,Block-9,56,32,144,8.3,Sample NPK region data
+Bihar,Gaya,Block-11,32,7,210,5.1,Sample NPK region data
+Bihar,Purnia,Block-7,66,12,232,6.1,Sample NPK region data
+Punjab,Patiala,Block-3,113,11,214,8.5,Sample NPK region data
+Punjab,Ludhiana,Block-8,75,14,75,7.7,Sample NPK region data
+Maharashtra,Aurangabad,Block-8,48,49,237,5.8,Sample NPK region data
+Rajasthan,Udaipur,Block-18,62,22,162,6.5,Sample NPK region data
+Haryana,Karnal,Block-13,84,6,100,6.5,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-17,98,56,55,5.3,Sample NPK region data
+Maharashtra,Solapur,Block-7,104,22,107,5.4,Sample NPK region data
+Karnataka,Kalaburagi,Block-15,112,46,108,6.8,Sample NPK region data
+Haryana,Rohtak,Block-13,22,25,233,7.1,Sample NPK region data
+Rajasthan,Bikaner,Block-18,42,23,230,7.7,Sample NPK region data
+Rajasthan,Ajmer,Block-4,38,32,137,5.1,Sample NPK region data
+Karnataka,Dharwad,Block-7,50,52,306,5.8,Sample NPK region data
+Punjab,Amritsar,Block-6,68,32,274,6.1,Sample NPK region data
+Punjab,Firozpur,Block-17,77,51,178,7.1,Sample NPK region data
+Gujarat,Bhavnagar,Block-10,39,24,85,8.4,Sample NPK region data
+Bihar,Patna,Block-12,55,23,79,8.0,Sample NPK region data
+Gujarat,Surat,Block-1,131,45,89,6.4,Sample NPK region data
+Rajasthan,Ajmer,Block-4,41,34,133,6.4,Sample NPK region data
+Punjab,Amritsar,Block-20,27,30,54,8.0,Sample NPK region data
+Bihar,Bhagalpur,Block-5,108,45,247,5.7,Sample NPK region data
+Punjab,Ludhiana,Block-6,71,27,129,8.0,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-15,110,58,240,6.6,Sample NPK region data
+Maharashtra,Nashik,Block-4,77,20,327,5.7,Sample NPK region data
+Tamil Nadu,Madurai,Block-2,113,12,165,7.8,Sample NPK region data
+Gujarat,Vadodara,Block-5,75,18,167,7.2,Sample NPK region data
+Maharashtra,Solapur,Block-4,74,12,315,7.9,Sample NPK region data
+Punjab,Patiala,Block-9,83,19,235,6.4,Sample NPK region data
+Karnataka,Kalaburagi,Block-17,107,44,76,6.6,Sample NPK region data
+Rajasthan,Bikaner,Block-17,82,28,125,6.3,Sample NPK region data
+Bihar,Muzaffarpur,Block-20,79,58,131,7.7,Sample NPK region data
+Gujarat,Vadodara,Block-4,95,20,238,7.6,Sample NPK region data
+Rajasthan,Jodhpur,Block-9,83,54,140,6.0,Sample NPK region data
+Karnataka,Bengaluru,Block-4,51,12,88,7.3,Sample NPK region data
+Madhya Pradesh,Bhopal,Block-11,67,20,157,7.9,Sample NPK region data
+Bihar,Purnia,Block-4,101,60,234,6.1,Sample NPK region data
+Punjab,Firozpur,Block-12,124,25,246,8.5,Sample NPK region data
+Punjab,Amritsar,Block-10,29,42,267,5.6,Sample NPK region data
+Rajasthan,Jaipur,Block-8,24,42,216,5.7,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-12,129,45,154,8.0,Sample NPK region data
+Haryana,Gurgaon,Block-15,42,31,112,8.3,Sample NPK region data
+Bihar,Patna,Block-18,61,49,291,6.9,Sample NPK region data
+Madhya Pradesh,Jabalpur,Block-7,78,16,180,8.2,Sample NPK region data
+Rajasthan,Bikaner,Block-11,98,43,56,5.1,Sample NPK region data
+Tamil Nadu,Chennai,Block-17,61,15,125,8.5,Sample NPK region data
+Gujarat,Bhavnagar,Block-13,45,60,197,6.8,Sample NPK region data
+Punjab,Jalandhar,Block-20,21,36,84,5.7,Sample NPK region data
+Karnataka,Kalaburagi,Block-12,54,49,107,7.7,Sample NPK region data
+Punjab,Ludhiana,Block-3,82,57,103,7.9,Sample NPK region data
+Haryana,Hisar,Block-12,139,22,269,7.4,Sample NPK region data
+Gujarat,Rajkot,Block-20,42,31,329,5.7,Sample NPK region data
+Karnataka,Mysore,Block-14,91,21,180,8.2,Sample NPK region data
+Uttar Pradesh,Varanasi,Block-2,116,24,253,7.3,Sample NPK region data
+Rajasthan,Jodhpur,Block-16,82,39,201,5.5,Sample NPK region data
+Gujarat,Rajkot,Block-6,99,50,208,7.1,Sample NPK region data
+Madhya Pradesh,Gwalior,Block-14,27,39,131,6.6,Sample NPK region data
+Punjab,Jalandhar,Block-15,24,53,133,5.5,Sample NPK region data

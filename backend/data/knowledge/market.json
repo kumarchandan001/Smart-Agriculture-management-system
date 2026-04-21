@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding Minimum Support Price (MSP)",
+    "description": "MSP is the government-set price at which procurement is done",
+    "importance": "Protects farmers from price fluctuations",
+    "details": [
+      {
+        "point": "MSP Announcement",
+        "content": "Government announces MSP before sowing season to help farmers plan"
+      },
+      {
+        "point": "Procurement Process",
+        "content": "Farmers sell at MSP through official mandis, FCI, or government agencies"
+      },
+      {
+        "point": "Current Crops with MSP",
+        "content": "Wheat, Rice, Cotton, Sugarcane, Oil seeds, Pulses, Corn"
+      },
+      {
+        "point": "MSP Trends",
+        "content": "MSP increases yearly based on inflation and cost of cultivation"
+      }
+    ],
+    "tips": "Check latest MSP rates on eNAM or agricultural ministry website before selling"
+  },
+  {
+    "id": 2,
+    "title": "Agricultural Mandi (Market) Tips",
+    "description": "Strategies to get better prices in agricultural markets",
+    "tips": [
+      {
+        "point": "Market Timing",
+        "content": "Avoid selling during peak harvest season. Wait for prices to stabilize."
+      },
+      {
+        "point": "Quality Standards",
+        "content": "Better quality produce fetches higher prices. Grade and sort before selling."
+      },
+      {
+        "point": "Market Information",
+        "content": "Check daily prices in multiple mandis. Use Agrimarket or eNAM platforms."
+      },
+      {
+        "point": "Direct Marketing",
+        "content": "Sell directly to consumers, retailers, or processors to avoid middlemen."
+      },
+      {
+        "point": "Storage",
+        "content": "Store produce properly to reduce losses and sell at better prices later."
+      },
+      {
+        "point": "Farmer Producer Organizations",
+        "content": "Join FPO to get better bargaining power and market access."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Organic Farming Premium",
+    "description": "Opportunities for organic produce in premium markets",
+    "benefits": [
+      {
+        "point": "Price Premium",
+        "value": "20-40% higher prices compared to conventional produce"
+      },
+      {
+        "point": "Market Demand",
+        "value": "Growing urban demand for organic, pesticide-free produce"
+      },
+      {
+        "point": "Export Opportunities",
+        "value": "International markets pay higher prices for certified organic"
+      },
+      {
+        "point": "Long-term Sustainability",
+        "value": "Organic farming maintains soil health and reduces input costs"
+      }
+    ],
+    "certification": "NPOP/IFOAM certification needed for premium prices",
+    "tips": "Join organic producer groups for better market linkage"
+  },
+  {
+    "id": 4,
+    "title": "E-Commerce Platforms for Farmers",
+    "description": "Digital platforms connecting farmers directly to buyers",
+    "platforms": [
+      {
+        "name": "e-NAM",
+        "description": "National Agricultural Market - electronic trading of agricultural commodities",
+        "benefit": "Transparent pricing, wider market access, reduced commission"
+      },
+      {
+        "name": "AGRITECH",
+        "description": "Platform connecting farmers with buyers and processors",
+        "benefit": "Direct buyer access, no middlemen, fair prices"
+      },
+      {
+        "name": "BigHaat",
+        "description": "Marketplace for farm inputs and outputs",
+        "benefit": "Quality products, fast delivery, farmer-friendly"
+      },
+      {
+        "name": "Local Retail Chains",
+        "description": "Direct tie-ups with retail chains and supermarkets",
+        "benefit": "Regular sales, premium prices, reduced wastage"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Value-Added Agricultural Products",
+    "description": "Increase income by adding value to produce",
+    "products": [
+      {
+        "product": "Fruit Jams and Preserves",
+        "margin": "50-100% premium",
+        "investment": "Low to medium",
+        "skillsNeeded": "Basic food preservation"
+      },
+      {
+        "product": "Vegetable Pickles",
+        "margin": "60-120% premium",
+        "investment": "Low",
+        "skillsNeeded": "Traditional preservation methods"
+      },
+      {
+        "product": "Processed Spices",
+        "margin": "40-80% premium",
+        "investment": "Medium",
+        "skillsNeeded": "Processing and packaging"
+      },
+      {
+        "product": "Honey and Bee Products",
+        "margin": "100-200% premium",
+        "investment": "Medium to high",
+        "skillsNeeded": "Beekeeping expertise"
+      },
+      {
+        "product": "Organic Flour and Cereals",
+        "margin": "30-60% premium",
+        "investment": "Medium",
+        "skillsNeeded": "Processing and packaging"
+      }
+    ],
+    "support": "Government provides subsidies for food processing units"
+  }
+]

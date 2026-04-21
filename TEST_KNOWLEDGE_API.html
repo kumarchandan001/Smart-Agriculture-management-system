@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knowledge Hub API Test</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .success { color: green; }
+        .error { color: red; }
+        .loading { color: blue; }
+        pre { background: #f5f5f5; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🌾 Knowledge Hub API Test</h1>
+    
+    <h2>Test 1: Get Categories</h2>
+    <div id="test1" class="loading">Loading...</div>
+    
+    <h2>Test 2: Get Crops</h2>
+    <div id="test2" class="loading">Loading...</div>
+    
+    <h2>Test 3: Get Pests</h2>
+    <div id="test3" class="loading">Loading...</div>
+
+    <script>
+        async function testAPI() {
+            try {
+                // Test 1: Categories
+                const cat = await fetch('http://localhost:5000/api/knowledge');
+                const catData = await cat.json();
+                document.getElementById('test1').innerHTML = 
+                    '<span class="success">✓ Categories loaded: ' + catData.categories.length + ' categories</span><pre>' + 
+                    JSON.stringify(catData.categories, null, 2) + '</pre>';
+            } catch (e) {
+                document.getElementById('test1').innerHTML = '<span class="error">✗ Error: ' + e.message + '</span>';
+            }
+
+            try {
+                // Test 2: Crops
+                const crops = await fetch('http://localhost:5000/api/knowledge/crops');
+                const cropsData = await crops.json();
+                document.getElementById('test2').innerHTML = 
+                    '<span class="success">✓ Crops loaded: ' + cropsData.data.length + ' crops</span><pre>' + 
+                    JSON.stringify(cropsData.data.slice(0, 1), null, 2) + '</pre>';
+            } catch (e) {
+                document.getElementById('test2').innerHTML = '<span class="error">✗ Error: ' + e.message + '</span>';
+            }
+
+            try {
+                // Test 3: Pests
+                const pests = await fetch('http://localhost:5000/api/knowledge/pests');
+                const pestsData = await pests.json();
+                document.getElementById('test3').innerHTML = 
+                    '<span class="success">✓ Pests loaded: ' + pestsData.data.length + ' pests</span><pre>' + 
+                    JSON.stringify(pestsData.data.slice(0, 1), null, 2) + '</pre>';
+            } catch (e) {
+                document.getElementById('test3').innerHTML = '<span class="error">✗ Error: ' + e.message + '</span>';
+            }
+        }
+
+        testAPI();
+    </script>
+</body>
+</html>

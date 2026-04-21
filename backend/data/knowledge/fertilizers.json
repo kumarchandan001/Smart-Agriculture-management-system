@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "name": "Nitrogen (N)",
+    "NPKValue": 46,
+    "type": "Macronutrient",
+    "function": "Promotes leaf and stem growth, dark green color",
+    "sources": ["Urea", "Ammonium Nitrate", "Ammonium Sulfate", "Organic manure"],
+    "deficiencySymptoms": "Yellowing of older leaves, stunted growth, poor tillering",
+    "excessSymptoms": "Excessive vegetative growth, delayed flowering, susceptible to pests",
+    "applicationTiming": [
+      "50% at sowing/transplanting",
+      "25% at 30 days",
+      "25% at flowering/fruiting"
+    ],
+    "recommendations": {
+      "Rice": "80-120 kg/ha",
+      "Wheat": "100-120 kg/ha",
+      "Maize": "100-120 kg/ha",
+      "Tomato": "100-150 kg/ha"
+    },
+    "soilTest": "200-250 kg/ha is optimal",
+    "tips": "Urea is most commonly used, dissolve in water before application"
+  },
+  {
+    "id": 2,
+    "name": "Phosphorus (P)",
+    "NPKValue": 46,
+    "type": "Macronutrient",
+    "function": "Root development, flowering, fruit set, disease resistance",
+    "sources": ["Super Phosphate", "Di-ammonium Phosphate (DAP)", "Triple Super Phosphate", "Bone meal"],
+    "deficiencySymptoms": "Poor root development, purple discoloration, delayed flowering",
+    "excessSymptoms": "Excessive vegetative growth, poor fruit quality",
+    "applicationTiming": [
+      "100% at sowing/transplanting (basal dressing)"
+    ],
+    "recommendations": {
+      "Rice": "40-60 kg/ha",
+      "Wheat": "60-80 kg/ha",
+      "Maize": "60-80 kg/ha",
+      "Tomato": "60-100 kg/ha"
+    },
+    "soilTest": "15-25 kg/ha is optimal",
+    "tips": "Apply as basal dressing with organic matter for better absorption"
+  },
+  {
+    "id": 3,
+    "name": "Potassium (K)",
+    "NPKValue": 60,
+    "type": "Macronutrient",
+    "function": "Drought resistance, disease tolerance, fruit quality, water transport",
+    "sources": ["Muriate of Potash (MOP)", "Sulfate of Potash", "Wood ash", "Seaweed extract"],
+    "deficiencySymptoms": "Leaf margins turning brown, poor fruit quality, weak stems",
+    "excessSymptoms": "Reduced uptake of magnesium and calcium",
+    "applicationTiming": [
+      "100% at sowing/transplanting (basal dressing)"
+    ],
+    "recommendations": {
+      "Rice": "40-60 kg/ha",
+      "Wheat": "40-60 kg/ha",
+      "Maize": "40-60 kg/ha",
+      "Tomato": "60-100 kg/ha"
+    },
+    "soilTest": "150-200 kg/ha is optimal",
+    "tips": "Essential for crops on sandy soils, use with magnesium for better results"
+  },
+  {
+    "id": 4,
+    "name": "Farmyard Manure (FYM)",
+    "NPKValue": "0.5-0.8:0.3-0.5:0.5-0.8",
+    "type": "Organic",
+    "function": "Improves soil structure, adds organic matter, slow nutrient release",
+    "sources": ["Animal dung", "Farm waste", "Compost"],
+    "benefits": [
+      "Improves water holding capacity",
+      "Promotes beneficial microbes",
+      "Reduces synthetic fertilizer dependency",
+      "Cost-effective"
+    ],
+    "applicationRate": "10-20 tonnes/ha",
+    "timing": "Apply 2-3 weeks before planting",
+    "preparation": "Well-aged FYM (6-12 months old) is best",
+    "tips": "Mix FYM with other fertilizers for best results, maintain composting practices"
+  },
+  {
+    "id": 5,
+    "name": "Vermicompost",
+    "NPKValue": "1.5-2:1-1.5:1.5-2",
+    "type": "Organic",
+    "function": "Enriches soil with beneficial microbes and nutrients",
+    "sources": ["Earthworm processed waste", "Biodegradable matter"],
+    "benefits": [
+      "Rich in beneficial microorganisms",
+      "Improves nutrient availability",
+      "Reduces chemical fertilizer needs",
+      "Eco-friendly"
+    ],
+    "applicationRate": "2-5 tonnes/ha",
+    "timing": "Apply 1 week before sowing or mixed with FYM",
+    "preparation": "Use 6-8 month old vermicompost",
+    "tips": "More concentrated than FYM, cost higher but very effective"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Whitefly",
+    "scientificName": "Bemisia tabaci",
+    "affectedCrops": ["Tomato", "Cotton", "Brinjal", "Okra"],
+    "season": "Warm season (April-October)",
+    "symptoms": "Yellowing of leaves, wilting, stunted growth, sticky residue on leaves",
+    "severity": "High",
+    "organicControl": [
+      "Spray neem oil (3%) at 7-10 days interval",
+      "Use yellow sticky traps",
+      "Spray insecticidal soap",
+      "Remove affected leaves manually"
+    ],
+    "chemicalControl": [
+      "Imidacloprid 17.8% @ 0.4ml/liter",
+      "Thiamethoxam 25% WG @ 0.4g/liter",
+      "Spiromesifen 22.9% SC @ 0.6ml/liter"
+    ],
+    "preventionTips": "Use resistant varieties, maintain field hygiene, proper spacing, intercropping",
+    "description": "Whiteflies are tiny insects that suck plant sap, transmitting viruses and causing stunted growth."
+  },
+  {
+    "id": 2,
+    "name": "Aphid",
+    "scientificName": "Aphis spp.",
+    "affectedCrops": ["Wheat", "Chickpea", "Mustard", "Tomato"],
+    "season": "Cool season (October-March)",
+    "symptoms": "Curling of leaves, yellowing, sticky honeydew, sooty mold formation",
+    "severity": "Medium-High",
+    "organicControl": [
+      "Spray neem oil (3%)",
+      "Water spray with soap solution",
+      "Use of beneficial insects like ladybugs",
+      "Spray chilli-garlic extract"
+    ],
+    "chemicalControl": [
+      "Dimethoate 30% EC @ 0.5ml/liter",
+      "Malathion 50% EC @ 1ml/liter",
+      "Imidacloprid 17.8% @ 0.4ml/liter"
+    ],
+    "preventionTips": "Avoid excessive nitrogen, use resistant varieties, timely sowing",
+    "description": "Aphids are soft-bodied insects that feed on plant sap and multiply rapidly in cool weather."
+  },
+  {
+    "id": 3,
+    "name": "Stem Borer",
+    "scientificName": "Sesamia inferens",
+    "affectedCrops": ["Maize", "Rice", "Sugarcane", "Sorghum"],
+    "season": "June-October (Kharif)",
+    "symptoms": "Dead heart in seedlings, white sawdust-like frass in tunnels, ear damage",
+    "severity": "High",
+    "organicControl": [
+      "Pheromone traps for monitoring",
+      "Release of parasitoids (Trichogramma)",
+      "Spray spinosad 45% SC",
+      "Intercropping with trap crops"
+    ],
+    "chemicalControl": [
+      "Cartap hydrochloride 50% SP @ 1g/liter",
+      "Chlorpyrifos 20% EC @ 1ml/liter",
+      "Lamda-cyhalothrin 5% EC @ 0.5ml/liter"
+    ],
+    "preventionTips": "Timely sowing, destroy crop residue, use pheromone traps",
+    "description": "Stem borers are larvae that tunnel inside plant stems, causing wilting and crop loss."
+  },
+  {
+    "id": 4,
+    "name": "Powdery Mildew",
+    "scientificName": "Erysiphe/Uncinula spp.",
+    "affectedCrops": ["Wheat", "Grapes", "Cucumber", "Tomato"],
+    "season": "Cool and dry weather",
+    "symptoms": "White powdery coating on leaves, premature leaf drop, reduced yield",
+    "severity": "Medium",
+    "organicControl": [
+      "Spray sulfur 80% WP @ 2g/liter",
+      "Spray baking soda (sodium bicarbonate) 1%",
+      "Spray potassium permanganate solution",
+      "Neem oil spray"
+    ],
+    "chemicalControl": [
+      "Sulfur 80% WP @ 2g/liter",
+      "Hexaconazole 5% SC @ 0.5ml/liter",
+      "Dinocap 48% EC @ 0.5ml/liter"
+    ],
+    "preventionTips": "Avoid crowding, maintain field hygiene, improve air circulation, use resistant varieties",
+    "description": "Powdery mildew is a fungal disease causing white coating on plant leaves and reducing yield."
+  },
+  {
+    "id": 5,
+    "name": "Early Blight",
+    "scientificName": "Alternaria solani",
+    "affectedCrops": ["Tomato", "Potato", "Brinjal"],
+    "season": "Rainy and cool season",
+    "symptoms": "Concentric rings on older leaves, yellowing, leaf spots with dark brown rings",
+    "severity": "High",
+    "organicControl": [
+      "Spray copper oxychloride 50% WP @ 2.5g/liter",
+      "Remove affected leaves immediately",
+      "Improve field ventilation",
+      "Spray Bacillus subtilis"
+    ],
+    "chemicalControl": [
+      "Mancozeb 75% WP @ 2g/liter",
+      "Chlorothalonil 75% WP @ 2g/liter",
+      "Azoxystrobin 23% SC @ 0.5ml/liter"
+    ],
+    "preventionTips": "Use disease-free seeds, crop rotation, avoid overhead watering, mulching",
+    "description": "Early blight causes leaf spots with concentric rings and can devastate tomato and potato crops."
+  }
+]
