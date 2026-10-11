@@ -83,22 +83,29 @@ export default function PestSymptomForm({ onDetectionComplete, onError }) {
 
     try {
       const result = await detectPestFromSymptoms(selectedSymptoms, selectedCrop);
+      const data = result.topMatch ? result : (result.data || result);
+      const topMatch = data.topMatch || (data.data && data.data.topMatch);
+      const probablePests = data.probablePests || (data.data && data.data.probablePests) || [];
 
-      if (result.success) {
-        setResults(result);
+      if (result.success && topMatch) {
+        setResults({
+          ...data,
+          topMatch,
+          probablePests,
+        });
         if (onDetectionComplete) {
           onDetectionComplete({
             detectionMethod: 'symptoms',
-            pestName: result.topMatch.name,
-            probablePests: result.probablePests,
+            pestName: topMatch.name,
+            probablePests: probablePests,
             symptoms: selectedSymptoms,
             crop: selectedCrop,
-            confidence: result.topMatch.confidence,
+            confidence: topMatch.confidence,
           });
         }
       } else {
-        setError(result.error || 'Could not detect pest');
-        if (onError) onError(result.error);
+        setError(result.error || data.error || 'No matching pests found for these symptoms');
+        if (onError) onError(result.error || data.error);
       }
     } catch (err) {
       setError(err.message || 'Detection failed');
@@ -238,34 +245,34 @@ export default function PestSymptomForm({ onDetectionComplete, onError }) {
         </div>
 
         {/* Results */}
-        {results && (
+        {results?.topMatch && (
           <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
             <h3 className="font-bold text-blue-900 mb-3">Detection Results</h3>
 
             {/* Top match */}
             <div className="mb-4 p-3 bg-white rounded border-l-4 border-green-600">
               <div className="flex justify-between items-start mb-2">
-                <h4 className="font-bold text-lg text-gray-800">{results.topMatch.name}</h4>
+                <h4 className="font-bold text-lg text-gray-800">{results.topMatch?.name}</h4>
                 <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  {results.topMatch.confidence}%
+                  {results.topMatch?.confidence}%
                 </span>
               </div>
               <p className="text-sm text-gray-600 mb-2">
-                Severity: <span className="font-semibold capitalize">{results.topMatch.severity}</span>
+                Severity: <span className="font-semibold capitalize">{results.topMatch?.severity}</span>
               </p>
-              <p className="text-sm text-gray-600">Type: <span className="font-semibold capitalize">{results.topMatch.type}</span></p>
+              <p className="text-sm text-gray-600">Type: <span className="font-semibold capitalize">{results.topMatch?.type}</span></p>
             </div>
 
             {/* Alternative matches */}
-            {results.probablePests.length > 1 && (
+            {Array.isArray(results?.probablePests) && results.probablePests.length > 1 && (
               <div>
                 <p className="text-sm font-semibold text-gray-700 mb-2">Other Possible Pests:</p>
                 <div className="space-y-2">
                   {results.probablePests.slice(1, 4).map((pest, idx) => (
                     <div key={idx} className="p-2 bg-white rounded text-sm">
                       <div className="flex justify-between">
-                        <span className="font-medium">{pest.name}</span>
-                        <span className="text-yellow-600 font-bold">{pest.confidence}%</span>
+                        <span className="font-medium">{pest?.name}</span>
+                        <span className="text-yellow-600 font-bold">{pest?.confidence}%</span>
                       </div>
                     </div>
                   ))}

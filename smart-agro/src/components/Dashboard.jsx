@@ -22,6 +22,7 @@ import Expenses from "./filters/Expenses";
 import Soil from "./features/Soil";
 import Pest from "./features/Pest";
 import Knowledge from "./features/Knowledge";
+import ErrorBoundary from "./ErrorBoundary";
 
 // Mock Feature Components
 // const CropRec = () => (
@@ -268,7 +269,11 @@ export default function Dashboard() {
               </div>
 
               {/* Content Body */}
-              <div className="p-6 md:p-8 min-h-[500px]">{renderActive()}</div>
+              <div className="p-6 md:p-8 min-h-[500px]">
+                <ErrorBoundary key={active}>
+                  {renderActive()}
+                </ErrorBoundary>
+              </div>
             </div>
 
             {/* Quick Stats */}

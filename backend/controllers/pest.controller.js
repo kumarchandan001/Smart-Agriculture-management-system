@@ -51,6 +51,8 @@ exports.detectFromSymptoms = async (req, res) => {
 
     return res.json({
       success: result.success,
+      topMatch: result.topMatch || null,
+      probablePests: result.probablePests || [],
       data: result.success ? result : null,
       error: result.error || null,
     });

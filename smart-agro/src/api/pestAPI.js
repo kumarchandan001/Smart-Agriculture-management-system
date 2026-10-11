@@ -44,7 +44,15 @@ export const detectPestFromSymptoms = async (symptoms, crop) => {
       symptoms,
       crop,
     });
-    return response.data;
+    const resData = response.data;
+    const payload = resData.data || resData;
+    return {
+      success: resData.success !== false && payload.success !== false,
+      topMatch: payload.topMatch || resData.topMatch || null,
+      probablePests: payload.probablePests || resData.probablePests || [],
+      data: payload,
+      error: resData.error || payload.error || null,
+    };
   } catch (error) {
     return {
       success: false,
