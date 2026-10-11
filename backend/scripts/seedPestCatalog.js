@@ -4,6 +4,7 @@
  */
 
 const mongoose = require('mongoose');
+const path = require('path');
 const PestCatalog = require('../models/PestCatalog');
 
 const pests = [
@@ -290,14 +291,121 @@ const pests = [
     ],
     isActive: true,
   },
+  {
+    name: 'Brown Spot',
+    type: 'disease',
+    severity: 'high',
+    cropList: ['rice', 'paddy'],
+    symptomKeywords: ['brown spots', 'yellowing leaves', 'lesions', 'spots', 'leaf spots', 'brown', 'yellowing'],
+    description: 'Fungal disease (Bipolaris oryzae) causing dark oval brown spots with yellow halos across rice foliage',
+    recommendedTreatments: [
+      {
+        type: 'chemical',
+        name: 'Mancozeb 75% WP',
+        activeIngredient: 'Mancozeb',
+        dosage: 2,
+        unit: 'g/L',
+        frequency: 'Every 10-14 days',
+        notes: 'Foliar spray during tillering and panicle initiation',
+        cost: 160
+      },
+      {
+        type: 'chemical',
+        name: 'Hexaconazole 5% EC',
+        activeIngredient: 'Hexaconazole',
+        dosage: 2,
+        unit: 'ml/L',
+        frequency: 'Once at appearance',
+        notes: 'Systemic fungicide with protective and curative action',
+        cost: 240
+      },
+      {
+        type: 'biological',
+        name: 'Pseudomonas fluorescens',
+        activeIngredient: 'P. fluorescens 1% WP',
+        dosage: 10,
+        unit: 'g/L',
+        frequency: 'Seed treatment & spray',
+        notes: 'Bio-control agent promoting systemic resistance',
+        cost: 110
+      }
+    ],
+    preventiveMeasures: [
+      { measure: 'Balanced Fertilization', description: 'Avoid nitrogen deficiency; ensure adequate potassium supply' },
+      { measure: 'Clean Seed Selection', description: 'Treat seeds with hot water or fungicide prior to nursery bed sowing' }
+    ],
+    isActive: true
+  },
+  {
+    name: 'Rice Blast',
+    type: 'disease',
+    severity: 'critical',
+    cropList: ['rice', 'paddy'],
+    symptomKeywords: ['brown spots', 'spindle lesions', 'wilting', 'leaf blast', 'neck blast', 'gray center', 'lesions'],
+    description: 'Fungal pathogen (Magnaporthe oryzae) causing diamond-shaped brown-rimmed lesions on leaves and neck nodes',
+    recommendedTreatments: [
+      {
+        type: 'chemical',
+        name: 'Tricyclazole 75% WP',
+        activeIngredient: 'Tricyclazole',
+        dosage: 0.6,
+        unit: 'g/L',
+        frequency: 'Every 12 days',
+        notes: 'Most effective blast fungicide; apply at boot leaf stage',
+        cost: 320
+      },
+      {
+        type: 'chemical',
+        name: 'Isoprothiolane 40% EC',
+        activeIngredient: 'Isoprothiolane',
+        dosage: 1.5,
+        unit: 'ml/L',
+        frequency: 'At first sign',
+        notes: 'Curative spray preventing neck node rot',
+        cost: 290
+      }
+    ],
+    isActive: true
+  },
+  {
+    name: 'Rice Leaf Folder',
+    type: 'insect',
+    severity: 'medium',
+    cropList: ['rice', 'paddy'],
+    symptomKeywords: ['feeding damage', 'folded leaves', 'white streaks', 'yellowing leaves', 'holes in leaves'],
+    description: 'Caterpillar folds rice leaves longitudinally and scrapes green chlorophyll from inside',
+    recommendedTreatments: [
+      {
+        type: 'chemical',
+        name: 'Cartap Hydrochloride 50% SP',
+        activeIngredient: 'Cartap Hydrochloride',
+        dosage: 2,
+        unit: 'g/L',
+        frequency: 'Once during vegetative stage',
+        notes: 'Stops feeding immediately on contact',
+        cost: 220
+      },
+      {
+        type: 'biological',
+        name: 'Neem Seed Kernel Extract (NSKE)',
+        dosage: 50,
+        unit: 'ml/L',
+        frequency: 'Every 10 days',
+        notes: 'Organic insect repellent preventing egg hatching',
+        cost: 95
+      }
+    ],
+    isActive: true
+  }
 ];
 
 async function seedPestCatalog() {
   try {
-    // Connect to MongoDB
+    require('dotenv').config({ path: path.join(__dirname, '../.env') });
     console.log('Connecting to MongoDB...');
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/smart-agro');
-    console.log('✓ Connected to MongoDB');
+    const mongoUri = process.env.MONGO_URI || process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/smart_agri';
+    await mongoose.connect(mongoUri);
+    console.log('✓ Connected to MongoDB:', mongoUri);
 
     // Clear existing data
     console.log('Clearing existing pest catalog...');

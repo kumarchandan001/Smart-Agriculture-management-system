@@ -54,8 +54,11 @@ class PestService {
       // Search in cache
       const matches = [];
 
+      const normalizedCrop = (crop || '').toLowerCase().trim();
+
       for (const pest of this.catalogCache) {
-        if (pest.cropList.length > 0 && !pest.cropList.includes(crop)) {
+        const pestCropList = (pest.cropList || []).map(c => c.toLowerCase().trim());
+        if (pestCropList.length > 0 && !pestCropList.includes(normalizedCrop)) {
           continue; // Skip if crop not applicable
         }
 

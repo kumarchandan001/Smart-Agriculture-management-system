@@ -7,6 +7,25 @@ const path = require('path');
 const { parse } = require('csv-parse/sync');
 // Optionally you can read from DB (Crop model) instead
 
+const CROP_METADATA = {
+  cotton: { soil: 'Black / Clayey Loam', season: 'Kharif', price: 7120 },
+  maize: { soil: 'Well-drained Loam', season: 'Kharif / Rabi', price: 2225 },
+  sugarcane: { soil: 'Deep Loam / Alluvial', season: 'Annual', price: 340 },
+  soybean: { soil: 'Fertile Loam', season: 'Kharif', price: 4892 },
+  rice: { soil: 'Clayey / Alluvial', season: 'Kharif', price: 2300 },
+  paddy: { soil: 'Clayey / Alluvial', season: 'Kharif', price: 2300 },
+  wheat: { soil: 'Well-drained Loam', season: 'Rabi', price: 2425 },
+  tomato: { soil: 'Sandy Loam / Red Soil', season: 'Kharif / Rabi', price: 2100 },
+  potato: { soil: 'Sandy Loam', season: 'Rabi', price: 1500 },
+  onion: { soil: 'Sandy Loam / Clay Loam', season: 'Kharif / Rabi', price: 2400 },
+  groundnut: { soil: 'Sandy Loam', season: 'Kharif', price: 6780 },
+  mustard: { soil: 'Loamy to Heavy Clay', season: 'Rabi', price: 5950 },
+  chana: { soil: 'Deep Clay / Loam', season: 'Rabi', price: 5650 },
+  chickpea: { soil: 'Deep Clay / Loam', season: 'Rabi', price: 5650 },
+  barley: { soil: 'Sandy Loam', season: 'Rabi', price: 1850 },
+  bajra: { soil: 'Sandy Loam / Black Soil', season: 'Kharif', price: 2500 }
+};
+
 let cropData = []; // will be loaded from csv or DB
 
 function loadCropCSV() {
@@ -41,11 +60,14 @@ function loadCropCSV() {
       const expectedYield = Number(r.expected_yield_ton_per_hectare || r.expected_yield || r.yield || 0);
       const fertSug = (r.fertilizer_suggestion || r.fertilizer || r.fertilizer_suggestion || '').toString();
 
+      const key = cropName.toLowerCase().trim();
+      const meta = CROP_METADATA[key] || { soil: 'Alluvial Loam', season: 'Kharif / Rabi', price: 2200 };
+
       return {
         crop_name: cropName,
-        soil: (r.soil_type || r.soil || r.Soil || '').toString().toLowerCase(),
-        season: (r.season || r.Season || '').toString().toLowerCase(),
-        water_need: (r.water_need || r.water || r.Water || '').toString().toLowerCase(),
+        soil: (r.soil_type || r.soil || r.Soil || meta.soil).toString(),
+        season: (r.season || r.Season || meta.season).toString(),
+        water_need: (r.water_need || r.water || r.Water || 'medium').toString().toLowerCase(),
         n_req: idealN,
         p_req: idealP,
         k_req: idealK,
@@ -53,7 +75,7 @@ function loadCropCSV() {
         ph_max: phMax,
         yield_expected_t_ha: expectedYield,
         fertilizer_suggestion: fertSug,
-        price_per_quintal: Number(r.price || r.price_per_quintal || 0)
+        price_per_quintal: Number(r.price || r.price_per_quintal || meta.price)
       };
     });
     console.log('Loaded crop dataset rows:', cropData.length);
@@ -131,17 +153,21 @@ async function recommend(input) {
   // sort by score desc
   scored.sort((a, b) => b.score - a.score);
 
-  // prepare  top recommendations
-  const top = scored.slice(0, 6).map(c => ({
-    crop_name: c.crop_name || 'Unknown',
-    soil: c.soil || '-',
-    season: c.season || '-',
-    score: c.score,
-    expected_yield: (c.yield_expected_t_ha !== undefined && c.yield_expected_t_ha !== null && c.yield_expected_t_ha !== 0) ? `${c.yield_expected_t_ha} t/ha` : 'N/A',
-    n_req: c.n_req || '-', p_req: c.p_req || '-', k_req: c.k_req || '-',
-    ph_range: `${(c.ph_min !== undefined ? c.ph_min : '-') } - ${(c.ph_max !== undefined ? c.ph_max : '-')}`,
-    price_per_quintal: (c.price_per_quintal && c.price_per_quintal > 0) ? c.price_per_quintal : '-'
-  }));
+  // prepare top recommendations
+  const top = scored.slice(0, 6).map(c => {
+    const key = (c.crop_name || '').toLowerCase().trim();
+    const meta = CROP_METADATA[key] || { soil: 'Alluvial Loam', season: 'Kharif / Rabi', price: 2200 };
+    return {
+      crop_name: c.crop_name || 'Unknown',
+      soil: c.soil && c.soil !== '-' ? c.soil : meta.soil,
+      season: c.season && c.season !== '-' ? c.season : meta.season,
+      score: c.score,
+      expected_yield: (c.yield_expected_t_ha !== undefined && c.yield_expected_t_ha !== null && c.yield_expected_t_ha !== 0) ? `${c.yield_expected_t_ha} t/ha` : 'N/A',
+      n_req: c.n_req || '-', p_req: c.p_req || '-', k_req: c.k_req || '-',
+      ph_range: `${(c.ph_min !== undefined ? c.ph_min : '-') } - ${(c.ph_max !== undefined ? c.ph_max : '-')}`,
+      price_per_quintal: (c.price_per_quintal && c.price_per_quintal > 0 && c.price_per_quintal !== '-') ? c.price_per_quintal : meta.price
+    };
+  });
 
   return top;
 }

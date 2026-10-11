@@ -17,82 +17,121 @@ export default function Weather() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const lat = "12.649220698194235";
-  const lon = "77.43870985907161";
+  const [lat, setLat] = useState("12.6492");
+  const [lon, setLon] = useState("77.4387");
   const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
+
+  const mapWmoToWeather = (code) => {
+    if (code === 0) return { description: "Clear sky", icon: "01d" };
+    if (code <= 3) return { description: "Partly cloudy", icon: "02d" };
+    if (code <= 48) return { description: "Foggy", icon: "50d" };
+    if (code <= 55) return { description: "Drizzle", icon: "09d" };
+    if (code <= 65) return { description: "Rain", icon: "10d" };
+    if (code <= 75) return { description: "Snow", icon: "13d" };
+    if (code <= 82) return { description: "Rain showers", icon: "09d" };
+    return { description: "Thunderstorm", icon: "11d" };
+  };
 
   const fetchWeather = async () => {
     setLoading(true);
     setError(null);
 
-    try {
-      const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-      const res = await fetch(url);
+    // 1. Try OpenWeatherMap if a real API key is configured
+    if (apiKey && apiKey !== "your_openweathermap_api_key_here") {
+      try {
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+        const res = await fetch(url);
+        if (res.ok) {
+          const data = await res.json();
+          const current = data.list[0];
+          const dailyForecasts = {};
+          data.list.forEach((item) => {
+            const date = new Date(item.dt * 1000);
+            const dateKey = date.toISOString().split("T")[0];
+            const hour = date.getHours();
+            if (!dailyForecasts[dateKey] || Math.abs(hour - 12) < Math.abs(new Date(dailyForecasts[dateKey].dt * 1000).getHours() - 12)) {
+              dailyForecasts[dateKey] = item;
+            }
+          });
 
-      if (!res.ok) {
-        throw new Error(`API request failed: ${res.status}`);
-      }
+          const daily = Object.values(dailyForecasts).slice(0, 5).map((item) => ({
+            date: new Date(item.dt * 1000).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }),
+            temp: Math.round(item.main.temp),
+            temp_min: Math.round(item.main.temp_min),
+            temp_max: Math.round(item.main.temp_max),
+            humidity: item.main.humidity,
+            pop: item.pop,
+            description: item.weather[0].description,
+            icon: item.weather[0].icon,
+            wind_speed: item.wind.speed,
+          }));
 
-      const data = await res.json();
-
-      // Get current weather (first item in list)
-      const current = data.list[0];
-
-      // Group forecasts by date and get one entry per day (noon forecast)
-      const dailyForecasts = {};
-      data.list.forEach((item) => {
-        const date = new Date(item.dt * 1000);
-        const dateKey = date.toISOString().split("T")[0];
-        const hour = date.getHours();
-
-        // Take the forecast closest to noon (12:00) for each day
-        if (
-          !dailyForecasts[dateKey] ||
-          Math.abs(hour - 12) <
-            Math.abs(
-              new Date(dailyForecasts[dateKey].dt * 1000).getHours() - 12
-            )
-        ) {
-          dailyForecasts[dateKey] = item;
+          setWeather({
+            cityName: data.city.name,
+            current: {
+              temp: Math.round(current.main.temp),
+              feels_like: Math.round(current.main.feels_like),
+              humidity: current.main.humidity,
+              wind_speed: current.wind.speed,
+              clouds: current.clouds.all,
+              visibility: (current.visibility / 1000).toFixed(1),
+              pressure: current.main.pressure,
+              description: current.weather[0].description,
+              icon: current.weather[0].icon,
+            },
+            daily,
+          });
+          setLoading(false);
+          return;
         }
-      });
+      } catch (e) {
+        console.warn("OpenWeatherMap failed, switching to Open-Meteo fallback:", e);
+      }
+    }
 
-      // Convert to array and take first 5 days
-      const daily = Object.values(dailyForecasts)
-        .slice(0, 5)
-        .map((item) => ({
-          date: new Date(item.dt * 1000).toLocaleDateString("en-US", {
-            weekday: "short",
-            month: "short",
-            day: "numeric",
-          }),
-          temp: Math.round(item.main.temp),
-          temp_min: Math.round(item.main.temp_min),
-          temp_max: Math.round(item.main.temp_max),
-          humidity: item.main.humidity,
-          pop: item.pop,
-          description: item.weather[0].description,
-          icon: item.weather[0].icon,
-          wind_speed: item.wind.speed,
-        }));
+    // 2. Open-Meteo Fallback (100% Free, No API Key needed, zero 401 errors)
+    try {
+      const openMeteoUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,apparent_temperature,surface_pressure,wind_speed_10m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto`;
+      const res = await fetch(openMeteoUrl);
+      if (!res.ok) {
+        throw new Error(`Weather service responded with status: ${res.status}`);
+      }
+      const data = await res.json();
+      const currentMeta = mapWmoToWeather(data.current.weather_code);
+
+      const daily = (data.daily.time || []).slice(0, 5).map((t, idx) => {
+        const meta = mapWmoToWeather(data.daily.weather_code[idx]);
+        const d = new Date(t);
+        return {
+          date: d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }),
+          temp: Math.round(((data.daily.temperature_2m_max[idx] || 0) + (data.daily.temperature_2m_min[idx] || 0)) / 2),
+          temp_min: Math.round(data.daily.temperature_2m_min[idx] || 0),
+          temp_max: Math.round(data.daily.temperature_2m_max[idx] || 0),
+          humidity: Math.round(data.current.relative_humidity_2m || 65),
+          pop: ((data.daily.precipitation_probability_max && data.daily.precipitation_probability_max[idx]) || 0) / 100,
+          description: meta.description,
+          icon: meta.icon,
+          wind_speed: Math.round(data.current.wind_speed_10m || 5),
+        };
+      });
 
       setWeather({
-        cityName: data.city.name,
+        cityName: `Farm Field (${Number(lat).toFixed(2)}°, ${Number(lon).toFixed(2)}°)`,
         current: {
-          temp: Math.round(current.main.temp),
-          feels_like: Math.round(current.main.feels_like),
-          humidity: current.main.humidity,
-          wind_speed: current.wind.speed,
-          clouds: current.clouds.all,
-          visibility: (current.visibility / 1000).toFixed(1),
-          pressure: current.main.pressure,
-          description: current.weather[0].description,
-          icon: current.weather[0].icon,
+          temp: Math.round(data.current.temperature_2m),
+          feels_like: Math.round(data.current.apparent_temperature),
+          humidity: Math.round(data.current.relative_humidity_2m),
+          wind_speed: Math.round(data.current.wind_speed_10m),
+          clouds: 20,
+          visibility: "10.0",
+          pressure: Math.round(data.current.surface_pressure),
+          description: currentMeta.description,
+          icon: currentMeta.icon,
         },
-        daily: daily,
+        daily,
       });
     } catch (err) {
-      setError(err.message);
+      setError(err.message || "Failed to load weather forecast");
     } finally {
       setLoading(false);
     }
