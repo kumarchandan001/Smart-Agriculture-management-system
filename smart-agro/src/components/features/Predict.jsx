@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import api from '../../api';
 
 export default function Predict() {
   const [formData, setFormData] = useState({
@@ -30,32 +31,11 @@ export default function Predict() {
     };
 
     try {
-      const token = localStorage.getItem('token');
-      const extraHeaders = token ? { Authorization: `Bearer ${token}` } : {};
-
-      console.log('Sending prediction payload:', payload);
-      console.log('With headers:', extraHeaders);
-
-      const res = await fetch('http://localhost:5000/api/predict/yield', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...extraHeaders
-        },
-        body: JSON.stringify(payload)
-      });
-
-      const text = await res.text();
-      const json = text ? JSON.parse(text) : {};
-      
-      if (!res.ok) {
-        throw { status: res.status, body: json };
-      }
-
+      const json = await api.post('/predict/yield', payload);
       setResult(json);
     } catch (err) {
       console.error(err);
-      const msg = (err && err.body && (err.body.error || JSON.stringify(err.body))) || 'Prediction failed';
+      const msg = (err && err.body && (err.body.error || JSON.stringify(err.body))) || err.message || 'Prediction failed';
       setError(msg);
     } finally {
       setLoading(false);

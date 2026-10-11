@@ -8,10 +8,27 @@ const authMiddleware = require('../middleware/auth.middleware');
 
 // POST /api/predict/yield  (validation + create prediction)
 
-router.use(authMiddleware)
+const jwt = require('jsonwebtoken');
+const config = require('../config');
+
+// Optional auth helper: attaches user if present, but doesn't block unauthenticated callers
+function optionalAuth(req, res, next) {
+  const authHeader = req.headers['authorization'] || req.headers['Authorization'];
+  if (authHeader && authHeader.startsWith('Bearer ')) {
+    const token = authHeader.split(' ')[1];
+    try {
+      const payload = jwt.verify(token, config.JWT_SECRET);
+      req.user = { id: payload.sub, role: payload.role };
+    } catch (e) {
+      // ignore expired/invalid token for optional auth
+    }
+  }
+  next();
+}
 
 router.post(
   '/yield',
+  optionalAuth,
   validate([
     body('crop').notEmpty().withMessage('crop is required'),
     body('ideal_n').notEmpty().withMessage('ideal_n required').isNumeric().withMessage('ideal_n must be numeric'),

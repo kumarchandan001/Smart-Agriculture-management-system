@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Droplets, Leaf, DollarSign, AlertCircle, CheckCircle, Loader } from 'lucide-react';
 
+import api from '../../api';
+
 export default function Fertilizer() {
   const [crops, setCrops] = useState([]);
   const [regions, setRegions] = useState([]);
@@ -22,19 +24,28 @@ export default function Fertilizer() {
 
   const fetchInitialData = async () => {
     try {
-      const [cropsRes, regionsRes] = await Promise.all([
-        fetch('/api/fertilizer/crops'),
-        fetch('/api/fertilizer/regions')
+      const [cropsData, regionsData] = await Promise.all([
+        api.get('/fertilizer/crops').catch(() => null),
+        api.get('/fertilizer/regions').catch(() => null)
       ]);
 
-      if (cropsRes.ok) {
-        const cropsData = await cropsRes.json();
-        setCrops(cropsData.data || []);
+      if (cropsData?.data?.length) {
+        setCrops(cropsData.data);
+      } else {
+        setCrops(['Rice', 'Wheat', 'Maize', 'Cotton', 'Sugarcane', 'Soybean', 'Groundnut', 'Mustard']);
       }
 
-      if (regionsRes.ok) {
-        const regionsData = await regionsRes.json();
-        setRegions(regionsData.data || []);
+      if (regionsData?.data?.length) {
+        setRegions(regionsData.data);
+      } else {
+        setRegions([
+          { state: 'Punjab', district: 'Ludhiana', block: 'Ludhiana-1' },
+          { state: 'Haryana', district: 'Karnal', block: 'Karnal-Central' },
+          { state: 'Maharashtra', district: 'Pune', block: 'Haveli' },
+          { state: 'Karnataka', district: 'Mysore', block: 'Mysore-South' },
+          { state: 'Uttar Pradesh', district: 'Varanasi', block: 'Kashi' },
+          { state: 'Madhya Pradesh', district: 'Indore', block: 'Indore-Rural' }
+        ]);
       }
     } catch (err) {
       console.error('Error loading data:', err);
@@ -59,22 +70,16 @@ export default function Fertilizer() {
     setRecommendation(null);
 
     try {
-      const response = await fetch('/api/fertilizer/guide', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+      const data = await api.post('/fertilizer/guide', formData);
 
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        setError(data.message || 'Failed to get recommendations');
+      if (!data || !data.success) {
+        setError(data?.message || 'Failed to get recommendations');
         return;
       }
 
       setRecommendation(data.data);
     } catch (err) {
-      setError(`Error: ${err.message}`);
+      setError(`Error: ${err?.body?.message || err?.message || 'Failed to get recommendations'}`);
     } finally {
       setLoading(false);
     }

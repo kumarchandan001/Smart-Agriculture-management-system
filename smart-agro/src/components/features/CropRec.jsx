@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import api from '../../api';
 
 export default function CropRecommendation() {
   // State management
@@ -34,23 +35,19 @@ export default function CropRecommendation() {
       return;
     }
     try {
-      const res = await fetch(`/api/soil/region?state=${encodeURIComponent(regionState)}&district=${encodeURIComponent(regionDistrict || '')}`);
-      if (!res.ok) {
-        const txt = await res.json().catch(() => ({ error: 'No data' }));
-        alert('Region data not available: ' + (txt.error || res.statusText));
-        return;
-      }
-      const r = await res.json();
+      const r = await api.get(`/soil/region?state=${encodeURIComponent(regionState)}&district=${encodeURIComponent(regionDistrict || '')}`);
       if (r && r.data) {
         setN(r.data.n);
         setP(r.data.p);
         setK(r.data.k);
         setPh(r.data.ph);
         alert('Values filled from regional averages. Please confirm before submitting.');
+      } else {
+        alert('Region data not available: ' + ((r && r.error) || 'No data'));
       }
     } catch (err) {
       console.error(err);
-      alert('Failed to fetch region data');
+      alert('Failed to fetch region data: ' + (err?.body?.error || err.message));
     }
   };
 
@@ -60,24 +57,19 @@ export default function CropRecommendation() {
       return;
     }
     try {
-      const res = await fetch('/api/soil/estimate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ texture, organic, irrigation: irrigationQ })
-      });
-      const out = await res.json();
-      if (out.success && out.data) {
+      const out = await api.post('/soil/estimate', { texture, organic, irrigation: irrigationQ });
+      if (out && out.success && out.data) {
         setN(out.data.n);
         setP(out.data.p);
         setK(out.data.k);
         setPh(out.data.ph);
         alert('Estimated values filled. Confirm before submit.');
       } else {
-        alert('Estimation failed');
+        alert('Estimation failed: ' + ((out && out.error) || 'Unknown'));
       }
     } catch (err) {
       console.error(err);
-      alert('Estimation error');
+      alert('Estimation error: ' + (err?.body?.error || err.message));
     }
   };
 
@@ -133,32 +125,17 @@ export default function CropRecommendation() {
     };
 
     try {
-      const res = await fetch('/api/crops/recommend', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
+      const out = await api.post('/crops/recommend', data);
 
-      if (!res.ok) {
-        // try to read error body
-        const errBody = await res.json().catch(() => ({}));
-        const msg = errBody && errBody.error ? errBody.error : res.statusText || 'Server error';
-        console.error('Recommendation API error', res.status, msg);
-        alert('Recommendation failed: ' + msg);
-        setResults([]);
-        return;
-      }
-
-      const out = await res.json();
-      if (!out.success) {
-        alert('Recommendation failed: ' + (out.error || 'unknown'));
+      if (!out || !out.success) {
+        alert('Recommendation failed: ' + (out?.error || 'Server error'));
         setResults([]);
         return;
       }
       setResults(out.recommendations || []);
     } catch (err) {
       console.error(err);
-      alert('Recommendation error: ' + (err.message || err));
+      alert('Recommendation error: ' + (err?.body?.error || err?.message || 'Server error'));
     }
   };
 

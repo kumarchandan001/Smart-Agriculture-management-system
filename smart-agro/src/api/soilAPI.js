@@ -5,11 +5,12 @@ import axios from 'axios';
  * Axios instance configured for soil analysis endpoints
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const RAW_URL = import.meta.env.VITE_API_URL || 'https://smart-agri-backend-ole9.onrender.com';
+const ROOT_URL = RAW_URL.replace(/\/api\/?$/, "").replace(/\/$/, "");
 
 // Create axios instance
 const soilClient = axios.create({
-  baseURL: `${API_BASE_URL}/api/soil`,
+  baseURL: `${ROOT_URL}/api/soil`,
   headers: {
     'Content-Type': 'application/json',
   },
