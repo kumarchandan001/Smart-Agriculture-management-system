@@ -168,9 +168,10 @@ export default function Fertilizer() {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
             >
               <option value="">Select Crop</option>
-              {crops.map(crop => (
-                <option key={crop.crop} value={crop.crop}>{crop.crop}</option>
-              ))}
+              {crops.map((crop, idx) => {
+                const cropName = typeof crop === 'string' ? crop : (crop.crop || crop.name || `Crop ${idx}`);
+                return <option key={cropName || idx} value={cropName}>{cropName}</option>;
+              })}
             </select>
           </div>
         </div>
