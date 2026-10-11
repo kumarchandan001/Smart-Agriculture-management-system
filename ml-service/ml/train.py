@@ -48,10 +48,11 @@ def train_and_save(dataset_path: str = None, n_estimators:int = 200, random_stat
     model.fit(X_train, y_train)
 
     preds = model.predict(X_test)
+    import math
     r2 = float(r2_score(y_test, preds))
-    rmse = float(mean_squared_error(y_test, preds, squared=False))
+    rmse = float(math.sqrt(mean_squared_error(y_test, preds)))
 
-    ts = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M%S")
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%S")
     version = f"crop_yield_v1_{ts}"
     model_path = os.path.join(MODEL_DIR, f"{version}.pkl")
 

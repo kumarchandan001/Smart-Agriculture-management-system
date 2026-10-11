@@ -14,11 +14,11 @@ export default function NavBar(){
           <>
             <span style={{opacity:0.9}}>Hello, {user.name || user.email}</span>
             {user.role === 'admin' && <Link to="/admin" style={{color:'#fff',textDecoration:'none'}}>Admin</Link>}
-            {/* <Link to="/knowledge" style={{color:'#fff',textDecoration:'none'}}>📚 Knowledge Hub</Link> */}
-            {/* <Link to="/soil" style={{color:'#fff',textDecoration:'none'}}>🌱 Soil Health</Link> */}
-            {/* <Link to="/pests" style={{color:'#fff',textDecoration:'none'}}>🐛 Pest Management</Link> */}
-            {/* <Link to="/expenses" style={{color:'#fff',textDecoration:'none'}}>💰 Expenses</Link> */}
-            <button onClick={logout} style={{padding:'6px 8px',borderRadius:6}}>Logout</button>
+            <Link to="/knowledge" style={{color:'#fff',textDecoration:'none'}}>📚 Knowledge</Link>
+            <Link to="/soil" style={{color:'#fff',textDecoration:'none'}}>🌱 Soil Health</Link>
+            <Link to="/pests" style={{color:'#fff',textDecoration:'none'}}>🐛 Pests</Link>
+            <Link to="/expenses" style={{color:'#fff',textDecoration:'none'}}>💰 Expenses</Link>
+            <button onClick={logout} style={{padding:'6px 8px',borderRadius:6,cursor:'pointer'}}>Logout</button>
           </>
         ) : (
           <>
