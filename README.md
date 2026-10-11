@@ -10,6 +10,12 @@
 
 > An enterprise-grade, polyglot full-stack agritech platform designed to empower farmers with automated **soil health diagnostics**, **scientific fertilizer prescriptions**, **real-time government mandi pricing**, and **AI-driven crop yield predictions**.
 
+### 🚀 Live Cloud Deployments
+- 🌐 **Web Application:** [https://smart-agriculture-management-system-three.vercel.app](https://smart-agriculture-management-system-three.vercel.app)
+- 🔌 **Backend REST API:** [https://smart-agri-backend-ole9.onrender.com](https://smart-agri-backend-ole9.onrender.com)
+- 🤖 **FastAPI ML Service:** [https://smart-agri-ml.onrender.com](https://smart-agri-ml.onrender.com)
+- 🗄️ **Database:** MongoDB Atlas M0 Cluster (`smart_agri`)
+
 ---
 
 ## 🏛️ System Architecture
