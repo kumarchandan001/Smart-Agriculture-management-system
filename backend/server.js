@@ -132,6 +132,10 @@ app.get('/health', (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
 });
 
+app.get('/api/health', (req, res) => {
+  res.json({ status: "ok", time: new Date().toISOString() });
+});
+
 // --------------------------------------------
 // Error Handler
 // --------------------------------------------
