@@ -6,10 +6,21 @@ import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
-from .features import clean_and_prepare_df
+import sys
+BASE = os.path.dirname(os.path.abspath(__file__))
+if BASE not in sys.path:
+    sys.path.insert(0, BASE)
+
+try:
+    from .features import clean_and_prepare_df
+except (ImportError, ValueError):
+    try:
+        from features import clean_and_prepare_df
+    except ImportError:
+        from ml.features import clean_and_prepare_df
+
 import stat
 
-BASE = os.path.dirname(__file__)
 MODEL_DIR = os.path.join(BASE, "model")
 if os.path.exists(MODEL_DIR) and os.path.isfile(MODEL_DIR):
     os.remove(MODEL_DIR)

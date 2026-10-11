@@ -1,8 +1,18 @@
 # ml/predict.py
 import os
 import joblib
-import pandas as pd
-from .features import clean_and_prepare_df
+import sys
+BASE = os.path.dirname(os.path.abspath(__file__))
+if BASE not in sys.path:
+    sys.path.insert(0, BASE)
+
+try:
+    from .features import clean_and_prepare_df
+except (ImportError, ValueError):
+    try:
+        from features import clean_and_prepare_df
+    except ImportError:
+        from ml.features import clean_and_prepare_df
 
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "model")
 _loaded = None
